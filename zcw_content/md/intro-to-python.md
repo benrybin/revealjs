@@ -322,6 +322,8 @@ considered an expression, and so is a variable.
 
 # Comments
 
+-
+
 ## Single line comments
 
 ```python
@@ -337,11 +339,30 @@ migratory = False # African swallows are non-migratory.
 
 # Multi line comments
 
-```python
+```
 """
 In order to maintain air-speed velocity, 
 a swallow needs to beat its wings
 forty-three times every second
 """
 beats_per_second = 43
-````
+```
+
+-
+-
+
+# BREAK
+
+# EXERCISES 
+
+-
+-
+
+# Functions
+
+* A function is a named sequence of statements that performs a computation
+* When you define a function, you specify the name and the sequence of statements
+* Later, you can “call” the function by name.
+
+
+
