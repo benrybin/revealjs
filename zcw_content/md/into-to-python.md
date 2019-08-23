@@ -274,7 +274,27 @@ considered an expression, and so is a variable.
 
 ```
 >>> a = 35
-print(a)
+>>>print(a)
 ```
 
 -
+
+# Order of Operations
+
+* For mathematical operators, Python follows mathematical convention. 
+* The acronym PEMDAS is a useful way to remember the rules:
+  1. Parentheses,
+  2. Exponentiation
+  3. Multiplication and Division
+  4. Addition and Subtraction
+  Operators with the same precedence are evaluated from left to right.
+
+-
+-
+
+# String Operations
+
+-
+-
+
+# Comments
