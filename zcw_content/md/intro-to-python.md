@@ -25,6 +25,7 @@ Hello, World!
 -
 
 ## Java Hello World
+
 ```java
   class HelloJava {
     public static void main(String[] args) {
@@ -87,9 +88,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Addition
 
-```python
+```
 >>> 1 + 1
 2
+
 >>> 40 + 2
 42
 ```
@@ -99,9 +101,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Subtraction 
 
-```python
+```
 >>> 1 - 1
 0
+
 >>> 43 - 1
 42
 ```
@@ -110,9 +113,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Multiplication
 
-```python
+```
 >>> 7 * 7
 49
+
 >>> 21 * 2
 42
 ```
@@ -121,9 +125,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Division
 
-```python
+```
 >>> 1 / 1
 1.0
+
 >>> 84 / 2
 42.0
 ```
@@ -132,9 +137,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Modulo (Remainder)
 
-```python
+```
 >>> 2 % 2
 0
+
 >>> 3 % 2
 1
 ```
@@ -143,9 +149,10 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Exponentiation
 
-```python
+```
 >>> 2 ** 2
 4
+
 >>> 3 ** 3
 27
 ```
@@ -181,19 +188,19 @@ Execute a script file which contains python code (by convention python files hav
 ## The type function
 
 ```
->>>type(True)
+>>> type(True)
 <class 'bool'>
 
->>>type(1)
+>>> type(1)
 <class 'int'>
 
->>>type(42.0)
+>>> type(42.0)
 <class 'float'>
 
->>>type('Hello, Python!')
+>>> type('Hello, Python!')
 <class 'str'>
 
->>>type('42.0')
+>>> type('42.0')
 <class 'str'>
 
 ```
@@ -225,7 +232,7 @@ pi = 3.1415926535897932
 
 # type function revisited
 
-```python
+```
 >>> a = 35
 >>> type(a)
 <class 'int'>
@@ -250,6 +257,7 @@ pi = 3.1415926535897932
 [List of Keywords](https://docs.python.org/3/reference/lexical_analysis.html#keywords)
 
 ![Keywords](img/python-keywords.png)
+
 -
 
 # ASSIGNMENT STATEMENTS DEMO
@@ -262,11 +270,13 @@ pi = 3.1415926535897932
 considered an expression, and so is a variable.
 
 ```
->>>42
+>>> 42
 42
->>>a
+
+>>> a
 35
->>>a + 42
+
+>>> a + 42
 77
 ```
 
@@ -274,7 +284,7 @@ considered an expression, and so is a variable.
 
 ```
 >>> a = 35
->>>print(a)
+>>> print(a)
 ```
 
 -
@@ -294,7 +304,44 @@ considered an expression, and so is a variable.
 
 # String Operations
 
+| Operator | Operation            |
+| -------- | -------------------- |
+| +        | String Concatenation |
+| *        | Repetition           |
+
+```
+>>> 'eggs '+ 'and ' + 'ham'
+'eggs and ham'
+
+>>> 'Spam'*3
+'SpamSpamSpam'
+```
+
 -
 -
 
 # Comments
+
+## Single line comments
+
+```python
+# The airspeed velocity of an unladen swallow in meters per second
+velocity = 11
+```
+
+```python
+migratory = False # African swallows are non-migratory.
+```
+
+-
+
+# Multi line comments
+
+```python
+"""
+In order to maintain air-speed velocity, 
+a swallow needs to beat its wings
+forty-three times every second
+"""
+beats_per_second = 43
+````
