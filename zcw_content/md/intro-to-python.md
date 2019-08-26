@@ -16,6 +16,14 @@
 | Thousands of third-party modules     | [Python Package Index (PyPI)](https://pypi.org/)                     |
 
 -
+
+# The Zen Of Python
+
+Don't worry about this now. One day it will make sense. 
+
+[The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
+
+-
 -
 
 # Hello, World!
@@ -157,7 +165,15 @@ The floor division operator, //, divides two numbers and rounds down to an integ
 
 -
 
+## Special Note About Python 2
+The division operator, /, performs floor division if both operands are integers, 
+and floating-point division if either operand is a float.
+
+-
+
 ## Modulo (Remainder)
+
+The modulus operator divides two numbers and returns the remainder.
 
 ```none
 >>> 2 % 2
