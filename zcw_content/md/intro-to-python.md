@@ -49,7 +49,7 @@
 
 -
 
-## How to run Python code
+## How To Run Python Code
 
 * Interactive Mode 
 * Script Mode 
@@ -97,7 +97,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Addition
 
-```
+```none
 >>> 1 + 1
 2
 
@@ -109,7 +109,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Subtraction 
 
-```
+```none
 >>> 1 - 1
 0
 
@@ -121,7 +121,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Multiplication
 
-```
+```none
 >>> 7 * 7
 49
 
@@ -133,7 +133,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Division
 
-```
+```none
 >>> 1 / 1
 1.0
 
@@ -145,7 +145,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Modulo (Remainder)
 
-```
+```none
 >>> 2 % 2
 0
 
@@ -157,7 +157,7 @@ Execute a script file which contains python code (by convention python files hav
 
 ## Exponentiation
 
-```
+```none
 >>> 2 ** 2
 4
 
@@ -194,9 +194,9 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## The type function
+## The type Function
 
-```
+```none
 >>> type(True)
 <class 'bool'>
 
@@ -216,7 +216,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Link to More Information 
+## More Information 
 
 [Data Model Docs](https://docs.python.org/3/reference/datamodel.html#)
 
@@ -225,7 +225,7 @@ Execute a script file which contains python code (by convention python files hav
 -
 -
 
-# Assignment statements
+# Assignment Statements
 
 -
 
@@ -242,9 +242,9 @@ pi = 3.1415926535897932
 
 -
 
-## type function revisited
+## type Function Revisited
 
-```
+```none
 >>> a = 35
 >>> type(a)
 <class 'int'>
@@ -283,7 +283,7 @@ pi = 3.1415926535897932
 -
 -
 
-# Expressions and statements 
+# Expressions And Statements 
 
 -
 
@@ -292,7 +292,7 @@ pi = 3.1415926535897932
 An **expression** is a combination of values, variables, and operators.  
 A value all by itself is considered an expression, and so is a variable.
 
-```
+```none
 >>> 42
 42
 
@@ -309,7 +309,7 @@ A value all by itself is considered an expression, and so is a variable.
 
 A **statement** is a unit of code that has an effect, like creating a variable or displaying a value.
 
-```
+```none
 >>> a = 35
 >>> print(a)
 ```
@@ -317,7 +317,7 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 -
 -
 
-# Order of Operations
+# Order Of Operations
 
 -
 
@@ -341,7 +341,7 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 | +        | String Concatenation |
 | *        | Repetition           |
 
-```
+```none
 >>> 'eggs '+ 'and ' + 'ham'
 'eggs and ham'
 
@@ -356,7 +356,7 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 
 -
 
-## Single line comments
+## Single Line Comments
 
 ```python
 # The airspeed velocity of an unladen swallow in meters per second
@@ -369,7 +369,7 @@ migratory = False # African swallows are non-migratory.
 
 -
 
-## Multi line comments
+## Multi Line Comments
 
 ```
 """
@@ -392,13 +392,23 @@ beats_per_second = 43
 
 -
 
+## What Is A Function? 
+
 * A function is a named sequence of statements that performs a computation.
 * When you define a function, you specify the name and the sequence of statements.
 * Later, you can “call” the function by name.
 
 -
 
-## Function Definition
+## Why Use Functions? 
+
+*  Makes a program smaller by eliminating repetitive code.
+*  Makes a program easier to read and debug.
+*  Makes code reusable.
+
+-
+
+## Defining a function
 
 ```python
 def best_ice_cream():
@@ -411,7 +421,7 @@ def best_ice_cream():
 
 -
 
-## Function Definition Continued 
+## Defining a function Pt 2 
 
 * The first line of the function definition is called the header.
 * The rest is called the body.
@@ -419,6 +429,21 @@ def best_ice_cream():
 * By convention, indentation is always four spaces.
 
 -
+
+## Function Type 
+
+Defining a function creates a function object, which has type function:
+
+```none
+>>> type(best_ice_cream)
+<type 'function'>
+
+>>> print(best_ice_cream)
+<function best_ice_cream at 0x1073652a8>
+```
+
+-
+
 
 ## Function Name Rules
 
@@ -433,7 +458,7 @@ The rules for function names are the same as for variable names.
 
 ## Function Calls
 
-```
+```none
 >>> def best_ice_cream():
 ...     print("Mint chocolate chip.")
 ... 
@@ -441,8 +466,58 @@ The rules for function names are the same as for variable names.
 Mint chocolate chip.
 ```
 
+The function definition has to run before the function gets called.
+
+-
+
+## Arguments
+
+* Some functions require one or more arguments. 
+* math.power takes two, the base and the exponent.
+
+```none
+>>> import math
+>>> result = math.pow(2, 3)
+>>> print(result)
+8.0
+```
+
+-
+
+## Parameters 
+
+Inside the function, arguments are assigned to variables called parameters.
+
+```none
+>>> def favorite_ice_cream(fav_ice_cream):
+...     print("Your favorite ice cream is " + fav_ice_cream)
+... 
+>>> favorite_ice_cream("mint chocolate chip")
+Your favorite ice cream is mint chocolate chip
+```
+
+-
+
+## Composition
+
+-
+
+## Variable Scopes 
+
 -
 -
 
+# BREAK & EXERCISES 
 
+-
+-
 
+# Conditionals
+
+-
+-
+
+# Recursion
+
+-
+-
