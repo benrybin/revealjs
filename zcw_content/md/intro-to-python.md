@@ -90,6 +90,7 @@ Execute a script file which contains python code (by convention python files hav
 | Subtraction        | -       |
 | Multiplication     | *       | 
 | Division           | /       |
+| Floor Division     | //      |
 | Modulo (Remainder) | %       |
 | Exponentiation     | **      |
 
@@ -139,6 +140,19 @@ Execute a script file which contains python code (by convention python files hav
 
 >>> 84 / 2
 42.0
+```
+
+-
+
+## Floor Division
+
+The floor division operator, //, divides two numbers and rounds down to an integer.
+
+```none
+>>> minutes = 105
+>>> hours = minutes // 60
+>>> hours
+1
 ```
 
 -
