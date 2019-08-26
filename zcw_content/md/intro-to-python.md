@@ -498,11 +498,73 @@ Your favorite ice cream is mint chocolate chip
 
 -
 
-## Composition
+## Functions Can Call Functions
+
+```none
+>>> def say_hello():
+...     print("Hello")
+... 
+>>> def say_hello_two_times():
+...     say_hello()
+...     say_hello()
+... 
+>>> say_hello()
+Hello
+>>> 
+>>> say_hello_two_times()
+Hello
+Hello
+```
 
 -
 
 ## Variable Scopes 
+
+* Variables created inside of a function are local.
+
+```
+>>> name = 'Alice'
+>>> def print_name():
+...     name = 'Bob'
+...     print(name)
+... 
+>>> def print_other_name():
+...     name = 'John'
+...     print(name)
+... 
+>>> print_name()
+Bob 
+>>> print_other_name()
+John
+>>> print(name)
+Alice
+```
+
+-
+
+# docstring
+
+A docstring is a string at the beginning of a function that explains the interface.
+
+```python
+def add(x, y):
+    """
+    Adds two integers and returns their result.
+    x and y are integers.
+    """
+    return x + y
+
+result = add(1, 2)
+print(result)
+```
+
+-
+
+# Built-in Functions
+
+[Built-in Function Docs](https://docs.python.org/3/library/functions.html)
+
+![Moar](img/functions-moar.jpg)
 
 -
 -
