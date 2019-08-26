@@ -604,6 +604,43 @@ print(result)
 -
 -
 
+# Relational Operators
+
+-
+
+## What is it? 
+One of the operators that compares its operands.
+
+| Operator | Description              | Example |
+| -------- | ------------------------ | ------- |
+| ==       | is equal to              | x == y  |
+| !=       | is not equal to          | x != y  |
+| >        | is greater than          | x > y   |
+| <        | is less than             | x < y   |
+| >=       | greater than or equal to | x >= y  |
+| <=       | less than or equal to    | x <= y  |
+
+-
+-
+
+# Boolean Expressions
+
+## What is it?
+A boolean expression is an expression that is either true or false.
+
+-
+-
+
+# Logical Operators
+
+-
+
+## What is it?
+One of the operators that combines boolean expressions
+
+-
+-
+
 # Conditionals
 
 -
