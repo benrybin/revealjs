@@ -1596,9 +1596,3 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
-
-.scrollable {
-  bottom: 0px;
-  overflow-y: auto  !important;
-  overflow-x: hidden !important;
-}
