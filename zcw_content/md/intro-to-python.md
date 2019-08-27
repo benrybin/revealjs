@@ -862,10 +862,6 @@ x is a positive single-digit number.
 ```
 
 -
-
-![Nested Statements Bad Time](img/nested-statements-bad-time.jpg)
-
--
 -
 
 # BREAK & EXERCISES 
@@ -874,6 +870,55 @@ x is a positive single-digit number.
 -
 
 # Recursion
+
+-
+
+## What is it? 
+
+It is legal for one function to call another.  
+It is also legal for a function to call itself.  
+
+Recursion is the process of calling the function that is currently executing.
+
+-
+
+## Example
+
+```python
+def countdown(n):
+    if n <= 0: # Base case
+        print('Blastoff!') 
+    else:
+      print(n)
+      countdown(n - 1)
+
+countdown(10)
+```
+
+-
+
+## Infinite Recursion
+
+If the programmer fails to specify a base case that does not make a recursive call, the program will end in a runtime error.
+
+```python
+>>> def endless_inception():
+...   endless_inception()
+... 
+>>> endless_inception()
+```
+
+-
+
+## Recursion Error
+
+![RecursionError](img/recursion-error.png)
+
+-
+
+## No Base Case = Bad Time
+
+![No Base Case Bad Time](img/recursion-bad-time.jpg)
 
 -
 -
