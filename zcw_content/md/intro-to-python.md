@@ -604,12 +604,41 @@ print(result)
 -
 -
 
+# Boolean Expressions
+
+-
+
+## What Is It?
+A boolean expression is an expression that is either true or false.
+
+-
+
+## Examples
+
+```none
+>>> 5 == 5
+True
+>>> 5 == 6
+False
+>>> 5 > 6
+False
+>>> 5 < 6
+True
+```
+
+-
+-
+
 # Relational Operators
 
 -
 
 ## What is it? 
 One of the operators that compares its operands.
+
+-
+
+## Examples 
 
 | Operator | Description              | Example |
 | -------- | ------------------------ | ------- |
@@ -623,20 +652,62 @@ One of the operators that compares its operands.
 -
 -
 
-# Boolean Expressions
-
-## What is it?
-A boolean expression is an expression that is either true or false.
-
--
--
-
 # Logical Operators
 
 -
 
 ## What is it?
-One of the operators that combines boolean expressions
+One of the operators that combines boolean expressions.  
+
+There are three logical operators:
+* and
+* or
+* not
+
+-
+
+## and 
+
+Evaluates to True if both conditions are true
+
+```none
+>>> x = 5
+>>> x > 0 and x < 10
+True
+
+>>> x < 0 and x > 3
+False
+```
+
+-
+
+## or
+
+Evaluates to True if either or both conditions are true
+
+```none
+>>> n = 4
+>>> n % 2 == 0 or n % 3 == 0
+True
+
+>>> n % 5 == 0 or n % 3 == 0
+False
+```
+
+-
+
+## not
+
+Negates a boolean expression.
+
+```
+>>> not True
+False
+>>> not False
+True
+>>> not (1 > 0) 
+False
+```
 
 -
 -
