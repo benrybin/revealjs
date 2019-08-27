@@ -700,7 +700,7 @@ False
 
 Negates a boolean expression.
 
-```
+```none
 >>> not True
 False
 >>> not False
