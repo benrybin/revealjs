@@ -242,6 +242,8 @@ The modulus operator divides two numbers and returns the remainder.
 >>> type('42.0')
 <class 'str'>
 
+>>> type(str)
+<class 'type'>
 ```
 
 -
@@ -383,6 +385,9 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 -
 
 # Comments
+
+* Single line comments
+* Multi line comments
 
 -
 
@@ -948,7 +953,93 @@ feed me
 -
 -
 
+# The Range Type
+
+-
+
+## What Is It? 
+
+The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops.
+
+-
+
+## Quick Intro
+
+```none
+>>> a = range(10)
+>>> print(a)
+range(0, 10)
+>>> type(a)
+<class 'range'>
+>>> type(range)
+<class 'type'>
+```
+
+-
+
+## More On Range 
+
+We wil continue to talk about the range type further in the context of sequences and iterations in the upcoming sections.
+
+If you just can't wait, feel free to learn more about it in the docs.
+[Range Type](https://docs.python.org/3/library/stdtypes.html#range)
+
+-
+-
+
 # Iteration
+
+-
+
+# What Is It?
+
+Iteration is the ability to run a block of statements repeatedly.
+
+-
+
+# Iteration Kinds
+
+* for 
+* while
+
+-
+
+# The for Statement
+
+The for statement is used to iterate over the elements of a sequence (such as a string, tuple or list) or other iterable object.
+
+The for statement has the same structure as function definitions and if statements. (a header followed by an indented body). These are called compound statements.
+
+```python
+>>> for i in range(2):
+...     print(i)
+... 
+0
+1
+```
+
+-
+
+## The while Statement
+
+```
+def countdown(n):
+    while(n > 0):
+        print(n)
+        n = n - 1
+    print("Blastoff!")
+
+countdown(5)
+```
+
+-
+
+## Keyword break 
+
+-
+
+## Keyword continue 
+
 
 -
 -
