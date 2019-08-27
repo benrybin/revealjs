@@ -422,7 +422,7 @@ beats_per_second = 43
 
 -
 
-## What Is A Function? 
+## What Is It? 
 
 * A function is a named sequence of statements that performs a computation.
 * When you define a function, you specify the name and the sequence of statements.
@@ -550,7 +550,7 @@ Hello
 
 ## Variable Scopes 
 
-* Variables created inside of a function are local.
+Variables created inside of a function are local.
 
 ```
 >>> name = 'Alice'
@@ -633,7 +633,7 @@ True
 
 -
 
-## What is it? 
+## What Is It? 
 One of the operators that compares its operands.
 
 -
@@ -656,7 +656,7 @@ One of the operators that compares its operands.
 
 -
 
-## What is it?
+## What Is It?
 One of the operators that combines boolean expressions.  
 
 There are three logical operators:
@@ -712,7 +712,111 @@ False
 -
 -
 
+# Compound Statements
+
+-
+
+## Before we begin...
+
+You have already seen compound statements.   
+Functions are syntactically compound statements.  
+Don't get overwhelmed by the terminology.  
+
+-
+
+## What Is It?
+
+* A compound statement consists of one or more ‘clauses.’
+* A clause consists of a header and a ‘suite.’ 
+* The clause headers of a particular compound statement are all at the same indentation level.
+* Each clause header begins with a uniquely identifying keyword and ends with a colon.
+* A suite is a group of statements controlled by a clause. 
+
+-
+
+[Compound Statements](https://docs.python.org/3.7/reference/compound_stmts.html)
+
+-
+-
+
 # Conditionals
+
+-
+
+## Why Use Conditionals? 
+
+Conditionals provide the programmer with the ability to check conditions and change the behavior of the program accordingly. 
+
+-
+
+## The if Statement
+
+```none
+>>> x = 1
+>>> if x > 0:
+...     print("x is positive")
+... 
+x is positive
+```
+
+-
+
+## Breaking Down The if Statement
+
+* The boolean expression after the if is called the condition.
+* If the condition is true, the indented statement runs.
+* If the condition is false, nothing happens.
+* If statements have the same structure as function definitions. (a header followed by an indented body). These are called compound statements.
+
+-
+
+## The else Clause
+
+```none
+>>> x = 7
+>>> if x % 2 == 0:
+...     print("x is even")
+... else:
+...     print("x is odd")
+... 
+x is odd
+```
+
+-
+
+## Breaking Down the else Clause
+
+The else clause simply provides an alternative path of execution when the if condition is false.
+
+-
+
+## The elif Clause
+
+```none
+>>> x = 10
+>>> y = 5
+>>> if x < y:
+...     print("x is less than y")
+... elif x > y:
+...     print("x is greater than y")
+... else:
+...     print("x and y are equal")
+... 
+x is greater than y
+```
+
+-
+
+## Breaking Down The elif Clause:
+
+* elif is an abbreviation for "else if".
+* If there is an else clause, it has to be at the end, but there doesn't have to be one.
+* Each condition is checked in order. The first one to evaluate to true is run and no other is executed or evaluated.
+
+-
+-
+
+# BREAK & EXERCISES 
 
 -
 -
