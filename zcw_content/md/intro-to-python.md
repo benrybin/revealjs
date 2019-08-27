@@ -739,13 +739,7 @@ Don't get overwhelmed by the terminology.
 -
 -
 
-# Conditionals
-
--
-
-## Why Use Conditionals? 
-
-Conditionals provide the programmer with the ability to check conditions and change the behavior of the program accordingly. 
+# Conditional Execution
 
 -
 
@@ -812,6 +806,64 @@ x is greater than y
 * elif is an abbreviation for "else if".
 * If there is an else clause, it has to be at the end, but there doesn't have to be one.
 * Each condition is checked in order. The first one to evaluate to true is run and no other is executed or evaluated.
+
+-
+
+## Nested Conditions
+
+One condition can be nested within another.
+
+-
+
+## Example
+
+```none
+>>> x = 10
+>>> y = 5
+>>> 
+>>> if x == y:
+...      print("x and y are equal")
+... else:
+...      if x < y:
+...          print("x is less than y")
+...      else:
+...          print("x is greater than y")
+... 
+x is greater than y
+```
+
+-
+
+## Just Because You Can, Doesn't Mean You Should.
+
+Logical operators often provide a way to simplify nested conditional statements.
+
+-
+
+## Nested Conditional Statement 
+```none
+>>> x = 5
+>>> if 0 < x:
+...     if x < 10:
+...         print("x is a positive single-digit number.")
+... 
+x is a positive single-digit number.
+```
+
+-
+
+## Simplified Using Logical Operator
+
+```none
+>>> if 0 < x and x < 10:
+...     print("x is a positive single-digit number.")
+... 
+x is a positive single-digit number.
+```
+
+-
+
+![Nested Statements Bad Time](img/nested-statements-bad-time.jpg)
 
 -
 -
