@@ -7,13 +7,13 @@
 ## Why Python
 
 | Benefit                              | Resource                                                             |
-| ------------------------------------ | -------------------------------------------------------------------- |
-| Friendly & Easy to Learn             | [Think Python Ebook](https://greenteapress.com/wp/think-python-2e/)  |
-| Thoroughly documented                | [Python Docs](https://www.python.org/doc/)                           | 
-| Open source                          | [Wiki Entry](https://en.wikipedia.org/wiki/Open_source)              |
-| Broad range of applications          | [Applications](https://www.python.org/about/apps/)                   |
-| Fully featured standard library      | [Python Standard Library Docs](https://docs.python.org/3/)           |
-| Thousands of third-party modules     | [Python Package Index (PyPI)](https://pypi.org/)                     |
+| -------------------------------- | -------------------------------------------------------------------- |
+| Friendly & Easy to Learn         | [Think Python Ebook](https://greenteapress.com/wp/think-python-2e/)  |
+| Thoroughly documented            | [Python Docs](https://www.python.org/doc/)                           | 
+| Open source                      | [Wiki Entry](https://en.wikipedia.org/wiki/Open_source)              |
+| Broad range of applications      | [Applications](https://www.python.org/about/apps/)                   |
+| Fully featured standard library  | [Python Standard Library Docs](https://docs.python.org/3/)           |
+| Thousands of third-party modules | [Python Package Index (PyPI)](https://pypi.org/)                     |
 
 -
 
@@ -919,6 +919,56 @@ If the programmer fails to specify a base case that does not make a recursive ca
 ## No Base Case = Bad Time
 
 ![No Base Case Bad Time](img/recursion-bad-time.jpg)
+
+-
+-
+
+# Keyboard Input
+
+-
+
+Python 3
+```python
+>>> name = input("What is your name?\n")
+What is your name?
+Seymour
+>>> print(name)
+Seymour
+```
+
+Python 2
+```python
+>>> want = raw_input("What do you want\n")
+What do you want
+feed me
+>>> print(want)
+'feed me'
+```
+
+-
+-
+
+# Iteration
+
+-
+-
+
+# Strings
+
+-
+-
+
+# Lists
+
+-
+-
+
+# Dictionaries
+
+-
+-
+
+# Tuples
 
 -
 -
