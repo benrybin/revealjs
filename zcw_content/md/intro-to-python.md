@@ -416,6 +416,11 @@ beats_per_second = 43
 ```
 
 -
+
+
+![That is all](img/comments-that-is-all.png)
+
+-
 -
 
 # BREAK & EXERCISES 
@@ -1034,12 +1039,77 @@ countdown(5)
 
 -
 
-## Keyword break 
+## break Statement 
+
+The break statement breaks out of the innermost enclosing for or while loop.
+
+```none
+>>> for i in range(10):
+...     print(i)
+...     if(i == 5):
+...        print("I have found what I was looking for.")
+...        break
+... 
+0
+1
+2
+3
+4
+5
+I have found what I was looking for.
+```
 
 -
 
-## Keyword continue 
+## continue Statement
 
+The continue statement continues with the next iteration of the loop.
+
+```none
+>>> for i in range(10):
+...     if(i == 5):
+...         print("Skipping number 5")
+...         continue
+...     print(i)
+... 
+0
+1
+2
+3
+4
+Skipping number 5
+6
+7
+8
+9
+```
+
+-
+
+## pass Statement
+
+The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+```none
+>>> def master_piece():
+...     pass
+... 
+>>> master_piece()
+>>>
+```
+
+-
+
+# Control Flow 
+
+[Control Flow Tutorial](https://docs.python.org/3/tutorial/controlflow.html)
+
+![Control Flow More](img/control-flow-moar.jpg)
+
+-
+-
+
+# BREAK & EXERCISES 
 
 -
 -
