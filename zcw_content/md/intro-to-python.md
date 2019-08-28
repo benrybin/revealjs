@@ -737,6 +737,104 @@ One of the operators that compares its operands.
 | <=       | less than or equal to    | x <= y  |
 
 -
+
+## ==
+
+```none
+>>> 0 == 0
+True
+>>> 'a' == 'b'
+False
+>>> True == True
+True
+>>> True == False
+False
+
+```
+
+-
+
+## !=
+
+```none
+>>> 0 != 0
+False
+>>> 'a' != 'b'
+True
+>>> True != True
+False
+>>> True !=  False
+True
+```
+
+-
+
+## >
+
+```none
+>>> 1 > 0
+True
+>>> 0 > 1
+False
+>>> 'a' > 'b'
+False
+>>> 'b' > 'a'
+True
+>>> True > False
+True
+>>> False > True
+False
+```
+
+-
+
+## <
+
+```none
+>>> 1 < 0
+False
+>>> 0 < 1
+True
+>>> 'a' < 'b'
+True
+>>> 'b' < 'a'
+False
+>>> True < False
+False
+>>> False < True
+```
+
+-
+
+## >=
+
+```none
+>>> 0 >= 0
+True
+>>> 0 >= 1
+False
+>>> 'a' >= 'a'
+True
+>>> 'a' >= 'b'
+False
+```
+
+-
+
+## <=
+
+```none
+>>> 0 <= 0
+True
+>>> 0 <= 1
+True
+>>> 'a' <= 'b'
+True
+>>> 'b' <= 'a'
+False
+```
+
+-
 -
 
 # Logical Operators
