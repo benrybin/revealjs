@@ -4,7 +4,7 @@
 
 -
 
-## Why Python
+### Why Python
 
 | Benefit                              | Resource                                                             |
 | -------------------------------- | -------------------------------------------------------------------- |
@@ -26,13 +26,13 @@ Don't worry about this now. One day it will make sense.
 -
 -
 
-# Hello, World!
+### Hello, World!
 
 ![Show me the code](img/show-me-the-code.jpg)
 
 -
 
-## Java Hello World
+### Java Hello World
 
 ```java
   class HelloJava {
@@ -44,7 +44,7 @@ Don't worry about this now. One day it will make sense.
 
 -
 
-## Python Hello World
+### Python Hello World
 
 ```python
   print("Hello Python")
@@ -57,29 +57,29 @@ Don't worry about this now. One day it will make sense.
 
 -
 
-## How To Run Python Code
+### How To Run Python Code
 
 * Interactive Mode 
 * Script Mode 
 
 -
 
-## Interactive Mode 
+### Interactive Mode 
 
 Manually type and execute code directly in the Python Interpreter.
 
 -
 
-## Interactive Mode Demo
+### Interactive Mode Demo
 
 -
 
-## Script Mode
+### Script Mode
 Execute a script file which contains python code (by convention python files have a .py extention).
 
 -
 
-## Script Mode Demo
+### Script Mode Demo
 
 -
 -
@@ -90,7 +90,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Operations
+### Operations
 
 | Operation          | Symbol  |
 | ------------------ | ------- |
@@ -104,7 +104,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Addition
+### Addition
 
 ```none
 >>> 1 + 1
@@ -116,7 +116,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Subtraction 
+### Subtraction 
 
 ```none
 >>> 1 - 1
@@ -128,7 +128,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Multiplication
+### Multiplication
 
 ```none
 >>> 7 * 7
@@ -140,7 +140,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Division
+### Division
 
 ```none
 >>> 1 / 1
@@ -152,7 +152,7 @@ Execute a script file which contains python code (by convention python files hav
 
 -
 
-## Floor Division
+### Floor Division
 
 The floor division operator, //, divides two numbers and rounds down to an integer.
 
@@ -165,13 +165,13 @@ The floor division operator, //, divides two numbers and rounds down to an integ
 
 -
 
-## Special Note About Python 2
+### Special Note About Python 2
 The division operator, /, performs floor division if both operands are integers, 
 and floating-point division if either operand is a float.
 
 -
 
-## Modulo (Remainder)
+### Modulo (Remainder)
 
 The modulus operator divides two numbers and returns the remainder.
 
@@ -185,7 +185,7 @@ The modulus operator divides two numbers and returns the remainder.
 
 -
 
-## Exponentiation
+### Exponentiation
 
 ```none
 >>> 2 ** 2
@@ -197,7 +197,7 @@ The modulus operator divides two numbers and returns the remainder.
 
 -
 
-## ARITHMETIC OPERATORS DEMO
+### ARITHMETIC OPERATORS DEMO
 
 -
 -
@@ -206,14 +206,14 @@ The modulus operator divides two numbers and returns the remainder.
 
 -
 
-## Important Terms
+### Important Terms
 
 + **value**: One of the basic units of data, like a number or string, that a program manipulates.  
 + **type**: A category of values.
 
 -
 
-## Examples
+### Examples
 
 | Type    | Value         | Description |
 | ------- | ------------- | --------------------- |
@@ -224,7 +224,7 @@ The modulus operator divides two numbers and returns the remainder.
 
 -
 
-## The type Function
+### The type Function
 
 Given an argument, the type function return the type of an object.
 
@@ -250,7 +250,7 @@ Given an argument, the type function return the type of an object.
 
 -
 
-## More Information 
+### More Information 
 
 [Data Model Docs](https://docs.python.org/3/reference/datamodel.html#)
 
@@ -263,7 +263,7 @@ Given an argument, the type function return the type of an object.
 
 -
 
-## Important Terms
+### Important Terms
 
 A **variable** is a name that refers to a value.  
 An **assignment** is statement that assigns a value to a variable.
@@ -276,7 +276,7 @@ pi = 3.1415926535897932
 
 -
 
-## type Function Revisited
+### type Function Revisited
 
 ```none
 >>> a = 35
@@ -294,7 +294,7 @@ pi = 3.1415926535897932
 
 -
 
-## Variable Names
+### Variable Names
 
 * Can be as long as you like.
 * Can contain letters and numbers, but can't begin with a number.
@@ -304,7 +304,7 @@ pi = 3.1415926535897932
 
 -
 
-## Keywords
+### Keywords
 
 [List of Keywords](https://docs.python.org/3/reference/lexical_analysis.html#keywords)
 
@@ -312,7 +312,7 @@ pi = 3.1415926535897932
 
 -
 
-## ASSIGNMENT STATEMENTS DEMO
+### ASSIGNMENT STATEMENTS DEMO
 
 -
 -
@@ -321,7 +321,7 @@ pi = 3.1415926535897932
 
 -
 
-## Experssion
+### Experssion
 
 An **expression** is a combination of values, variables, and operators.  
 A value all by itself is considered an expression, and so is a variable.
@@ -339,7 +339,7 @@ A value all by itself is considered an expression, and so is a variable.
 
 -
 
-## Statement
+### Statement
 
 A **statement** is a unit of code that has an effect, like creating a variable or displaying a value.
 
@@ -377,7 +377,7 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 
 -
 
-## Concatenation
+### Concatenation
 
 ```none
 >>> 'eggs '+ 'and ' + 'ham'
@@ -389,7 +389,7 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 
 -
 
-## Concatenation Continued
+### Concatenation Continued
 
 When using the + operator where one of the operands is a string, both operands must be a string.  
 
@@ -408,7 +408,7 @@ You can convert a numeric value to a string with the built-in function str().
 
 -
 
-## Repetition
+### Repetition
 
 ```none
 >>> 'Spam' * 3
@@ -417,7 +417,7 @@ You can convert a numeric value to a string with the built-in function str().
 
 -
 
-## Repetition Continued
+### Repetition Continued
 
 When using the * operator where one of the operands is a string, the other operand must be an integer.  
 
@@ -442,7 +442,7 @@ You can convert a string to an integer using the built-in function int().
 
 -
 
-## Options
+### Options
 
 * Block comments
 * Inline comments
@@ -450,7 +450,7 @@ You can convert a string to an integer using the built-in function int().
 
 -
 
-## Block comments
+### Block comments
 
 Block comments generally apply to some (or all) code that follows them, and are indented to the same level as that code. Each line of a block comment starts with a # and a single space.
 
@@ -462,7 +462,7 @@ velocity = 11
 
 -
 
-## Inline Comments
+### Inline Comments
 
 An inline comment is a comment on the same line as a statement. Inline comments should be separated by at least two spaces from the statement. They should start with a # and a single space.
 
@@ -472,7 +472,7 @@ migratory = False  # African swallows are non-migratory.
 
 -
 
-## Documentation Strings
+### Documentation Strings
 
 This will become relevant in future sections. Just know it exists.
 
@@ -487,7 +487,7 @@ beats_per_second = 43
 
 -
 
-## Relevant Links
+### Relevant Links
 
 [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/#comments)  
 [PEP 257 Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
@@ -506,10 +506,11 @@ beats_per_second = 43
 -
 
 # Functions
+## Part 1
 
 -
 
-## What Is It? 
+### What Is It? 
 
 * A function is a named sequence of statements that performs a computation.
 * When you define a function, you specify the name and the sequence of statements.
@@ -517,7 +518,7 @@ beats_per_second = 43
 
 -
 
-## Why Use Functions? 
+### Why Use Functions? 
 
 *  Makes a program smaller by eliminating repetitive code.
 *  Makes a program easier to read and debug.
@@ -525,7 +526,7 @@ beats_per_second = 43
 
 -
 
-## Defining a function
+### Defining a function
 
 ```python
 def best_ice_cream():
@@ -538,7 +539,7 @@ def best_ice_cream():
 
 -
 
-## Defining a function Pt 2 
+### Defining a function Continued
 
 * The first line of the function definition is called the header.
 * The rest is called the body.
@@ -547,7 +548,7 @@ def best_ice_cream():
 
 -
 
-## Function Type 
+### Function Type 
 
 Defining a function creates a function object, which has type function:
 
@@ -562,7 +563,7 @@ Defining a function creates a function object, which has type function:
 -
 
 
-## Function Name Rules
+### Function Name Rules
 
 The rules for function names are the same as for variable names.
 
@@ -573,7 +574,7 @@ The rules for function names are the same as for variable names.
 
 -
 
-## Function Calls
+### Function Calls
 
 ```none
 >>> def best_ice_cream():
@@ -586,8 +587,14 @@ Mint chocolate chip.
 The function definition has to run before the function gets called.
 
 -
+-
 
-## Arguments
+# Functions
+## Part 2
+
+-
+
+### Arguments
 
 * Some functions require one or more arguments. 
 * math.power takes two, the base and the exponent.
@@ -601,7 +608,7 @@ The function definition has to run before the function gets called.
 
 -
 
-## Parameters 
+### Parameters 
 
 Inside the function, arguments are assigned to variables called parameters.
 
@@ -615,7 +622,7 @@ Your favorite ice cream is mint chocolate chip
 
 -
 
-## Functions Can Call Functions
+### Functions Can Call Functions
 
 ```none
 >>> def say_hello():
@@ -635,7 +642,7 @@ Hello
 
 -
 
-## Variable Scopes 
+### Variable Scopes 
 
 Variables created inside of a function are local.
 
@@ -659,7 +666,7 @@ Alice
 
 -
 
-# docstring
+### docstring Revisited
 
 A docstring is a string at the beginning of a function that explains the interface.
 
@@ -677,7 +684,7 @@ print(result)
 
 -
 
-# Built-in Functions
+### Built-in Functions
 
 [Built-in Function Docs](https://docs.python.org/3/library/functions.html)
 
@@ -695,12 +702,12 @@ print(result)
 
 -
 
-## What Is It?
+### What Is It?
 A boolean expression is an expression that is either true or false.
 
 -
 
-## Examples
+### Examples
 
 ```none
 >>> 5 == 5
@@ -720,12 +727,12 @@ True
 
 -
 
-## What Is It? 
+### What Is It? 
 One of the operators that compares its operands.
 
 -
 
-## Examples 
+### Examples 
 
 | Operator | Description              | Example |
 | -------- | ------------------------ | ------- |
@@ -738,7 +745,7 @@ One of the operators that compares its operands.
 
 -
 
-## ==
+### ==
 
 ```none
 >>> 0 == 0
@@ -754,7 +761,7 @@ False
 
 -
 
-## !=
+### !=
 
 ```none
 >>> 0 != 0
@@ -769,7 +776,7 @@ True
 
 -
 
-## >
+### >
 
 ```none
 >>> 1 > 0
@@ -788,7 +795,7 @@ False
 
 -
 
-## <
+### <
 
 ```none
 >>> 1 < 0
@@ -806,7 +813,7 @@ False
 
 -
 
-## >=
+### >=
 
 ```none
 >>> 0 >= 0
@@ -821,7 +828,7 @@ False
 
 -
 
-## <=
+### <=
 
 ```none
 >>> 0 <= 0
@@ -841,7 +848,7 @@ False
 
 -
 
-## What Is It?
+### What Is It?
 One of the operators that combines boolean expressions.  
 
 There are three logical operators:
@@ -851,7 +858,7 @@ There are three logical operators:
 
 -
 
-## and 
+### and 
 
 Evaluates to True if both conditions are true
 
@@ -866,7 +873,7 @@ False
 
 -
 
-## or
+### or
 
 Evaluates to True if either or both conditions are true
 
@@ -881,7 +888,7 @@ False
 
 -
 
-## not
+### not
 
 Negates a boolean expression.
 
@@ -901,7 +908,7 @@ False
 
 -
 
-## Before we begin...
+### Before we begin...
 
 You have already seen compound statements.   
 Functions are syntactically compound statements.  
@@ -909,7 +916,7 @@ Don't get overwhelmed by the terminology.
 
 -
 
-## What Is It?
+### What Is It?
 
 * A compound statement consists of one or more ‘clauses.’
 * A clause consists of a header and a ‘suite.’ 
@@ -925,10 +932,11 @@ Don't get overwhelmed by the terminology.
 -
 
 # Conditional Execution
+## Part 1
 
 -
 
-## The if Statement
+### The if Statement
 
 ```none
 >>> x = 1
@@ -940,7 +948,7 @@ x is positive
 
 -
 
-## Breaking Down The if Statement
+### Breaking Down The if Statement
 
 * The boolean expression after the if is called the condition.
 * If the condition is true, the indented statement runs.
@@ -949,7 +957,7 @@ x is positive
 
 -
 
-## The else Clause
+### The else Clause
 
 ```none
 >>> x = 7
@@ -963,13 +971,13 @@ x is odd
 
 -
 
-## Breaking Down the else Clause
+### Breaking Down the else Clause
 
 The else clause simply provides an alternative path of execution when the if condition is false.
 
 -
 
-## The elif Clause
+### The elif Clause
 
 ```none
 >>> x = 10
@@ -986,21 +994,27 @@ x is greater than y
 
 -
 
-## Breaking Down The elif Clause:
+### Breaking Down The elif Clause:
 
 * elif is an abbreviation for "else if".
 * If there is an else clause, it has to be at the end, but there doesn't have to be one.
 * Each condition is checked in order. The first one to evaluate to true is run and no other is executed or evaluated.
 
 -
+-
 
-## Nested Conditions
+# Conditional Execution
+## Part 2
+
+-
+
+### Nested Conditions
 
 One condition can be nested within another.
 
 -
 
-## Example
+### Example
 
 ```none
 >>> x = 10
@@ -1019,13 +1033,13 @@ x is greater than y
 
 -
 
-## Just Because You Can, Doesn't Mean You Should.
+### Just Because You Can, Doesn't Mean You Should.
 
 Logical operators often provide a way to simplify nested conditional statements.
 
 -
 
-## Nested Conditional Statement 
+### Nested Conditional Statement 
 ```none
 >>> x = 5
 >>> if 0 < x:
@@ -1037,7 +1051,7 @@ x is a positive single-digit number.
 
 -
 
-## Simplified Using Logical Operator
+### Simplified Using Logical Operator
 
 ```none
 >>> if 0 < x and x < 10:
@@ -1058,7 +1072,7 @@ x is a positive single-digit number.
 
 -
 
-## What is it? 
+### What is it? 
 
 It is legal for one function to call another.  
 It is also legal for a function to call itself.  
@@ -1067,7 +1081,7 @@ Recursion is the process of calling the function that is currently executing.
 
 -
 
-## Example
+### Example
 
 ```python
 def countdown(n):
@@ -1082,7 +1096,7 @@ countdown(10)
 
 -
 
-## Infinite Recursion
+### Infinite Recursion
 
 If the programmer fails to specify a base case that does not make a recursive call, the program will end in a runtime error.
 
@@ -1095,13 +1109,13 @@ If the programmer fails to specify a base case that does not make a recursive ca
 
 -
 
-## Recursion Error
+### Recursion Error
 
 ![RecursionError](img/recursion-error.png)
 
 -
 
-## No Base Case = Bad Time
+### No Base Case = Bad Time
 
 ![No Base Case Bad Time](img/recursion-bad-time.jpg)
 
@@ -1137,13 +1151,13 @@ feed me
 
 -
 
-## What Is It? 
+### What Is It? 
 
 The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops.
 
 -
 
-## Quick Intro
+### Quick Intro
 
 ```none
 >>> a = range(10)
@@ -1157,7 +1171,7 @@ range(0, 10)
 
 -
 
-## More On Range 
+### More On Range 
 
 We wil continue to talk about the range type further in the context of sequences and iterations in the upcoming sections.
 
@@ -1167,24 +1181,29 @@ If you just can't wait, feel free to learn more about it in the docs.
 -
 -
 
-# Iteration
+# Iteration  
+# &  
+# Control Flow
 
 -
 
-# What Is It?
+### What Is It?
 
 Iteration is the ability to run a block of statements repeatedly.
 
 -
 
-# Iteration Kinds
+### What We Will Cover
 
-* for 
-* while
+* for statement
+* while statement
+* break statement
+* continue statement
+* pass statement
 
 -
 
-# The for Statement
+### The for Statement
 
 The for statement is used to iterate over the elements of a sequence (such as a string, tuple or list) or other iterable object.
 
@@ -1200,7 +1219,7 @@ The for statement has the same structure as function definitions and if statemen
 
 -
 
-## The while Statement
+### The while Statement
 
 ```
 def countdown(n):
@@ -1214,7 +1233,7 @@ countdown(5)
 
 -
 
-## break Statement 
+### break Statement 
 
 The break statement breaks out of the innermost enclosing for or while loop.
 
@@ -1236,7 +1255,7 @@ I have found what I was looking for.
 
 -
 
-## continue Statement
+### continue Statement
 
 The continue statement continues with the next iteration of the loop.
 
@@ -1261,7 +1280,7 @@ Skipping number 5
 
 -
 
-## pass Statement
+### pass Statement
 
 The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
 
@@ -1275,7 +1294,7 @@ The pass statement does nothing. It can be used when a statement is required syn
 
 -
 
-# Control Flow 
+### More On Control Flow 
 
 [Control Flow Tutorial](https://docs.python.org/3/tutorial/controlflow.html)
 
@@ -1294,7 +1313,7 @@ The pass statement does nothing. It can be used when a statement is required syn
 
 -
 
-## What Is It?
+### What Is It?
 
 A string is an immutable sequence of characters.
 
@@ -1306,7 +1325,7 @@ A string is an immutable sequence of characters.
 
 -
 
-## Index Of A String
+### Index Of A String
 
 An index is an offset from the beginning of a sequence.
 
@@ -1322,7 +1341,7 @@ An index is an offset from the beginning of a sequence.
 
 -
 
-## Expressions Are Allowed 
+### Expressions Are Allowed 
 
 You can use an expression that contains variables and operators to describe the index.
 
@@ -1337,7 +1356,7 @@ u
 
 -
 
-## But...
+### But...
 
 The value of the index has to be an integer.
 
@@ -1350,7 +1369,7 @@ TypeError: string indices must be integers, not float
 
 -
 
-## The len Built-in Function
+### The len Built-in Function
 
 [Len](https://docs.python.org/3/library/functions.html#len) is a built-in function that returns the length of an object. When the argument passed to it is a string, it returns the number of characters in the string.
 
@@ -1363,7 +1382,7 @@ TypeError: string indices must be integers, not float
 
 -
 
-## The Last Item 
+### The Last Item 
 
 ```none
 >>> name = "Roberto"
@@ -1384,8 +1403,13 @@ t
 ```
 
 -
+-
 
-## Looping A String 
+# Working With Strings
+## Part 2
+
+-
+
 ### While Loop
 
 ```none
@@ -1405,7 +1429,6 @@ n
 
 -
 
-## Looping A String 
 ### For Loop
 
 ```none
@@ -1423,23 +1446,23 @@ n
 
 -
 
-## String Slices
+### String Slices
 
 -
 
-## Srings Are Immutable
+### Srings Are Immutable
 
 -
 
-## String Methods
+### String Methods
 
 -
 
-## String comparison
+### String comparison
 
 -
 
-## Docs On Strings
+### Docs On Strings
 
 [Strings ](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
