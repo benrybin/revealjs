@@ -440,25 +440,41 @@ You can convert a string to an integer using the built-in function int().
 
 # Comments
 
-* Single line comments
-* Multi line comments
+-
+
+## Options
+
+* Block comments
+* Inline comments
+* Documentation Strings
 
 -
 
-## Single Line Comments
+## Block comments
+
+Block comments generally apply to some (or all) code that follows them, and are indented to the same level as that code. Each line of a block comment starts with a # and a single space.
 
 ```python
-# The airspeed velocity of an unladen swallow in meters per second
+# The airspeed velocity of an unladen swallow measured in meters per second.
+# This is assuming average weather conditions.
 velocity = 11
 ```
 
+-
+
+## Inline Comments
+
+An inline comment is a comment on the same line as a statement. Inline comments should be separated by at least two spaces from the statement. They should start with a # and a single space.
+
 ```python
-migratory = False # African swallows are non-migratory.
+migratory = False  # African swallows are non-migratory.
 ```
 
 -
 
-## Multi Line Comments
+## Documentation Strings
+
+This will become relevant in future sections. Just know it exists.
 
 ```
 """
@@ -468,6 +484,13 @@ forty-three times every second
 """
 beats_per_second = 43
 ```
+
+-
+
+## Relevant Links
+
+[PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/#comments)  
+[PEP 257 Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
 
 -
 
