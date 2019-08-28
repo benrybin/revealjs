@@ -1289,7 +1289,8 @@ The pass statement does nothing. It can be used when a statement is required syn
 -
 -
 
-# Strings
+# Working With Strings
+## Part 1
 
 -
 
@@ -1323,7 +1324,7 @@ An index is an offset from the beginning of a sequence.
 
 ## Expressions Are Allowed 
 
-As an index you can use an expression that contains variables and operators.
+You can use an expression that contains variables and operators to describe the index.
 
 ```none
 >>> i = 0
@@ -1362,7 +1363,63 @@ TypeError: string indices must be integers, not float
 
 -
 
-## Looping Through A String
+## The Last Item 
+
+```none
+>>> name = "Roberto"
+>>> print(len(name))
+7
+>>> last_char = name[len(name) - 1]
+>>> print(last_char)
+o
+```
+
+Or we can use negative indices
+
+```none
+>>> print(name[-1])
+o
+>>> print(name[-2])
+t
+```
+
+-
+
+## Looping A String 
+### While Loop
+
+```none
+>>> index = 0
+>>> while index < len(word):
+...     letter = word[index]
+...     print(letter)
+...     index = index + 1
+... 
+p
+y
+t
+h
+o
+n
+```
+
+-
+
+## Looping A String 
+### For Loop
+
+```none
+>>> word = 'python'
+>>> for letter in word:
+...     print(letter)
+... 
+p
+y
+t
+h
+o
+n
+```
 
 -
 
