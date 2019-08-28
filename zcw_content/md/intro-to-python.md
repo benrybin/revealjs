@@ -1448,9 +1448,33 @@ n
 
 ### String Slices
 
+A slice is a segment of a sequence. 
+
+```none
+>>> full_name = 'Roberto DeDeus'
+>>> print(full_name)
+Roberto DeDeus
+>>> first_name = full_name[:7]
+>>> print(first_name)
+Roberto
+>>> last_name = full_name[8:]
+>>> print(last_name)
+DeDeus
+>>> full_name[7:8]
+' '
+```
+
 -
 
 ### Srings Are Immutable
+
+```none
+>>> a = 'top'
+>>> a[0] = 'p'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
 
 -
 
