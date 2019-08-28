@@ -986,7 +986,7 @@ range(0, 10)
 
 We wil continue to talk about the range type further in the context of sequences and iterations in the upcoming sections.
 
-If you just can't wait, feel free to learn more about it in the docs.
+If you just can't wait, feel free to learn more about it in the docs.  
 [Range Type](https://docs.python.org/3/library/stdtypes.html#range)
 
 -
@@ -1115,6 +1115,101 @@ The pass statement does nothing. It can be used when a statement is required syn
 -
 
 # Strings
+
+-
+
+## What Is It?
+
+A string is an immutable sequence of characters.
+
+```none
+>>> name = 'Marklar'
+>>> print(name)
+'Marklar'
+```
+
+-
+
+## Index Of A String
+
+An index is an offset from the beginning of a sequence.
+
+```none
+>>> name = 'Marklar'
+>>> first_letter = name[0]
+>>> print(first_letter)
+'M'
+>>> second_letter = name[1]
+>>> print(second_letter)
+'a'
+```
+
+-
+
+## Expressions Are Allowed 
+
+As an index you can use an expression that contains variables and operators.
+
+```none
+>>> i = 0
+>>> name = "Guido"
+>>> print(name[i])
+G
+>>> print(name[i + 1])
+u
+```
+
+-
+
+## But...
+
+The value of the index has to be an integer.
+
+```none
+>>> print(name[2.2])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: string indices must be integers, not float
+```
+
+-
+
+## The len Built-in Function
+
+[Len](https://docs.python.org/3/library/functions.html#len) is a built-in function that returns the length of an object. When the argument passed to it is a string, it returns the number of characters in the string.
+
+```none
+>>> len('one')
+3
+>>> len('four')
+4
+```
+
+-
+
+## Looping Through A String
+
+-
+
+## String Slices
+
+-
+
+## Srings Are Immutable
+
+-
+
+## String Methods
+
+-
+
+## String comparison
+
+-
+
+## Docs On Strings
+
+[Strings ](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
 -
 -
