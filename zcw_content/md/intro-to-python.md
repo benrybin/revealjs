@@ -226,6 +226,8 @@ The modulus operator divides two numbers and returns the remainder.
 
 ## The type Function
 
+Given an argument, the type function return the type of an object.
+
 ```none
 >>> type(True)
 <class 'bool'>
@@ -373,11 +375,63 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 | +        | String Concatenation |
 | *        | Repetition           |
 
+-
+
+## Concatenation
+
 ```none
 >>> 'eggs '+ 'and ' + 'ham'
 'eggs and ham'
 
->>> 'Spam'*3
+>>> '3' + '3'
+'33'
+```
+
+-
+
+## Concatenation Continued
+
+When using the + operator where one of the operands is a string, both operands must be a string.  
+
+```none
+>>> 3 + '3'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+You can convert a numeric value to a string with the built-in function str().
+```none
+>>> str(3) + '3'
+'33'
+```
+
+-
+
+## Repetition
+
+```none
+>>> 'Spam' * 3
+'SpamSpamSpam'
+```
+
+-
+
+## Repetition Continued
+
+When using the * operator where one of the operands is a string, the other operand must be an integer.  
+
+```none
+>>> 'Spam' * '3'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+```
+
+You can convert a string to an integer using the built-in function int().
+
+```none
+>>> 'Spam' * int('3')
 'SpamSpamSpam'
 ```
 
