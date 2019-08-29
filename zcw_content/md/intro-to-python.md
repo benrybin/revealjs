@@ -1478,11 +1478,26 @@ TypeError: 'str' object does not support item assignment
 
 -
 
-### String Methods
+### String Methods - upper
+
+```none
+>>> fruit = 'banana'
+>>> upper_banana = fruit.upper()
+>>> print(upper_banana)
+BANANA
+```
 
 -
 
-### String comparison
+### String Methods - find
+
+```none
+>>> fruit = 'apple'
+>>> fruit.find('p')
+1
+>>> fruit.find('i')
+-1
+```
 
 -
 
@@ -1496,9 +1511,48 @@ TypeError: 'str' object does not support item assignment
 # Lists
 
 -
+
+### What Is It? 
+
+A list is a sequence of values.  
+Lists are mutable.  
+Items in a list can be any type.
+
 -
 
-# Dictionaries
+### Creating A List
+
+```none
+['a', 'e', 'i', 'o', 'u']
+['DOG', 'CAT', 'BIRD']
+[1, 7, 14, 21, 28]
+```
+
+-
+
+### Elements Don't have to be The Same Type
+
+```none
+[1, 'DOG', True, 2.3]
+```
+
+-
+
+### Lists Can Contain (Nested) Lists
+
+```none
+[1, 'DOG', ['BALL', 'BAT']]
+```
+
+-
+
+### Accessing Elements From A List
+
+-
+
+### Docs On Lists
+
+[Docs On Lists](https://docs.python.org/3/library/stdtypes.html#list)
 
 -
 -
@@ -1507,3 +1561,9 @@ TypeError: 'str' object does not support item assignment
 
 -
 -
+
+# Dictionaries
+
+-
+-
+
