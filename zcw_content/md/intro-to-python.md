@@ -1,6 +1,23 @@
+# Attribution
+
+-
+
+[PSF](https://www.python.org/psf/)  
+
+[Allen Downey / Green Tea Press](https://greenteapress.com/wp/)
+
+-
+-
+
 # Introduction to Python
 
 ![Python](img/python-logo.png)
+
+-
+
+### What Is It?
+
+"Python is a programming language that lets you work quickly and integrate systems more effectively."
 
 -
 
