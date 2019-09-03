@@ -1657,6 +1657,60 @@ James
 
 ### List Slices
 
+A slice is a segment of a sequence. 
+
+```none
+>>> name = "Roberto"
+>>> nick_name = name[:3]
+>>> print(nick_name)
+Rob
+>>> nick_name_2 = name[2:]
+>>> print(nick_name_2)
+berto
+```
+
+-
+
+### Assignment With Slices
+
+```none
+>>> values = [1, 2, 3, 4, 5, 6]
+>>> values[1:4] = ['a', 'b', 'c']
+>>> values
+[1, 'a', 'b', 'c', 5, 6]
+
+```
+
+-
+-
+
+# Lists 
+## Part 3
+
+-
+
+### List Methods - append
+
+-
+
+### List Methods - extend
+
+-
+
+### List Methods - sum
+
+-
+
+### List methods - list
+
+-
+
+### Deleting Elements
+
+-
+
+### - Aliasing
+
 -
 
 ### Docs On Lists
