@@ -1617,6 +1617,7 @@ nums = [1, 7, 14, 21, 28]
 Joe
 Jessica
 James
+Jennifer
 ```
 
 -
@@ -1646,7 +1647,7 @@ James
 
 ```none
 >>> noise = ['Honk']
->>> noise*3
+>>> noise * 3
 ['Honk', 'Honk', 'Honk']
 
 >>> percolate = ["It's", "Time", "For", "The", "Percolator"]
@@ -1660,13 +1661,13 @@ James
 A slice is a segment of a sequence. 
 
 ```none
->>> name = "Roberto"
->>> nick_name = name[:3]
->>> print(nick_name)
-Rob
->>> nick_name_2 = name[2:]
->>> print(nick_name_2)
-berto
+>>> colors = ['r', 'o', 'y', 'g', 'b', 'i', 'v']
+>>> first_three = colors[:3]
+>>> print(first_three)
+['r', 'o', 'y']
+>>> last_four = colors[3:7]
+>>> print(last_four)
+['g', 'b', 'i', 'v']
 ```
 
 -
