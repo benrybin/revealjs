@@ -1526,6 +1526,7 @@ BANANA
 -
 
 # Lists
+## Part 1
 
 -
 
@@ -1540,9 +1541,9 @@ Items in a list can be any type.
 ### Creating A List
 
 ```none
-['a', 'e', 'i', 'o', 'u']
-['DOG', 'CAT', 'BIRD']
-[1, 7, 14, 21, 28]
+vowels = ['a', 'e', 'i', 'o', 'u']
+pets = ['DOG', 'CAT', 'BIRD']
+nums = [1, 7, 14, 21, 28]
 ```
 
 -
@@ -1565,6 +1566,97 @@ Items in a list can be any type.
 
 ### Accessing Elements From A List
 
+```none
+>>> vowels = ['a', 'e', 'i', 'o', 'u']
+>>> vowels[0]
+'a'
+```
+
+-
+
+### Accessing Elements From A Nested List
+
+```none
+>>> stuff = [1, 'DOG', ['BALL', 'BAT']]
+>>> stuff[0]
+1
+>>> stuff[2]
+['BALL', 'BAT']
+>>> stuff[2][0]
+'BALL'
+>>> stuff[2][1]
+'BAT'
+```
+
+-
+
+### Lists Are Mutable
+
+```none
+>>> pets = ['DOG', 'CAT', 'BIRD']
+>>> pets[1] = 'TURTLE'
+>>> pets
+['DOG', 'TURTLE', 'BIRD']
+```
+
+-
+-
+
+# Lists 
+## Part 2
+
+-
+
+### Traversing A List
+
+```none
+>>> people = ['Joe', 'Jessica', 'James', 'Jennifer']
+>>> for person in people:
+...     print(person)
+... 
+Joe
+Jessica
+James
+```
+
+-
+
+### List Operations
+
+| Operator | Operation            |
+| -------- | -------------------- |
+| +        | List Concatenation   |
+| *        | List Repetition      |
+
+-
+
+### List Concatenation 
+
+```none
+>>> parts_a = ['wheels', 'handlebar', 'tank']
+>>> parts_b = ['frame', 'chain', 'engine']
+>>> parts_c = parts_a + parts_b
+>>> parts_c
+['wheels', 'handlebar', 'tank', 'frame', 'chain', 'engine']
+```
+
+-
+
+### List Repetition
+
+```none
+>>> noise = ['Honk']
+>>> noise*3
+['Honk', 'Honk', 'Honk']
+
+>>> percolate = ["It's", "Time", "For", "The", "Percolator"]
+>>> percolate * 3
+["It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator']
+```
+-
+
+### List Slices
+
 -
 
 ### Docs On Lists
@@ -1575,6 +1667,14 @@ Items in a list can be any type.
 -
 
 # Tuples
+
+-
+
+### What Is It?
+
+A tuple is a sequence of values.  
+Tuples are immutable.
+Items in a tuple can be any type.
 
 -
 -
