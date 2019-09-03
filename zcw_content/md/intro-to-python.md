@@ -1819,13 +1819,29 @@ None
 
 -
 
-### Aliasing
-
--
-
 ### Docs On Lists
 
 [Docs On Lists](https://docs.python.org/3/library/stdtypes.html#list)
+
+-
+-
+
+# Aliasing
+
+The association of a variable with an object is called a reference.  
+In this example, there are two references to the same object.
+When an object has more than one reference, we say that the object is aliased.
+
+```none
+>>> a = [1, 2, 3]
+>>> b = a
+>>> b is a
+True
+```
+
+-
+
+### 
 
 -
 -
