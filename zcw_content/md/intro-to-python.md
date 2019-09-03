@@ -1692,25 +1692,120 @@ A slice is a segment of a sequence.
 
 ### List Methods - append
 
+Add new element to the end of a list.
+
+```none
+>>> letters = ['a', 'b', 'c']
+>>> letters
+['a', 'b', 'c']
+>>> letters.append('d')
+>>> letters
+['a', 'b', 'c', 'd']
+```
+
 -
 
 ### List Methods - extend
+
+Append all elements of a list argument to another list
+
+```none
+>>> t1 = ['a', 'b', 'c']
+>>> t2 = ['d', 'e']
+>>> t1.extend(t2)
+>>> t1
+['a', 'b', 'c', 'd', 'e']
+>>> t2
+['d', 'e']
+```
 
 -
 
 ### List Methods - sum
 
+Add up elements of a list.
+
+```none
+>>> grades = [60, 70, 90]
+>>> average = sum(grades) / len(grades)
+>>> print(average)
+73.33333333333333
+```
+
 -
 
 ### List methods - list
+
+```none
+>>> make = 'Yamaha'
+>>> make_items = list(make)
+>>> print(make_items)
+['Y', 'a', 'm', 'a', 'h', 'a']
+```
 
 -
 
 ### Deleting Elements
 
+* pop
+* del
+* remove
+
 -
 
-### - Aliasing
+### pop
+
+Uses an index to remove an element from the list.  
+Returns the removed element.  
+If no index is provided, it will default to the last element.
+
+```none
+>>> nums = [1, 2, 3]
+>>> print(nums)
+[1, 2, 3]
+>>> x = nums.pop(2)
+>>> print(x)
+3
+>>> print(nums)
+[1, 2]
+>>> y = nums.pop()
+>>> print(y)
+2
+>>> print(nums)
+[1]
+```
+
+-
+
+### del
+
+Same as pop but does not return the removed value.
+
+```none
+>>> nums = [1, 2, 3]
+>>> del nums[2]
+>>> print(nums)
+[1, 2]
+```
+-
+
+### remove
+
+Remove an item by the value rather than by index.
+Returns None.
+
+```none
+>>> fruits = ['apples', 'bananas', 'peaches']
+>>> val = fruits.remove('bananas')
+>>> print(val)
+None
+>>> print(fruits)
+['apples', 'peaches']
+```
+
+-
+
+### Aliasing
 
 -
 
