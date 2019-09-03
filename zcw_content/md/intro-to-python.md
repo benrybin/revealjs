@@ -1624,10 +1624,12 @@ Jennifer
 
 ### List Operations
 
-| Operator | Operation            |
-| -------- | -------------------- |
-| +        | List Concatenation   |
-| *        | List Repetition      |
+| Operator | Operation                               |
+| -------- | --------------------------------------- |
+| +        | List Concatenation                      |
+| *        | List Repetition                         |
+| in       | Element is a member of the sequence     |
+| not (in) | Element is not a member of the sequence |
 
 -
 
@@ -1654,6 +1656,18 @@ Jennifer
 >>> percolate * 3
 ["It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator']
 ```
+-
+
+### Membership Operators
+
+```none
+>>> marvel_heroes = ['Ironman', 'Thor', 'Black Panther', 'Black Widow']
+>>> 'Batman' in marvel_heroes
+False
+>>> 'Batman' not in marvel_heroes
+True
+```
+
 -
 
 ### List Slices
