@@ -1840,10 +1840,6 @@ True
 ```
 
 -
-
-### 
-
--
 -
 
 # Tuples
@@ -1853,8 +1849,78 @@ True
 ### What Is It?
 
 A tuple is a sequence of values.  
-Tuples are immutable.
+Tuples are immutable.  
 Items in a tuple can be any type.
+
+-
+
+### Creating A Tuple
+
+* comma separated list of values
+* comma separated list of values enclosed in parantheses
+* using the built-in tuple() function
+
+-
+
+### Comma Separated List Of Values
+
+```none
+>>> t1 = 1, 2, 3, 4, 5
+>>> print(t1)
+(1, 2, 3, 4, 5)
+>>> type(t1)
+<class 'tuple'>
+```
+
+-
+
+### Enclosed In Parantheses
+
+```none
+>>> t2 = ('a', 'e', 'i', 'o', 'u')
+>>> t2
+('a', 'e', 'i', 'o', 'u')
+>>> type(t2)
+<class 'tuple'>
+```
+
+-
+
+### tuple Function
+
+```none
+>>> t3 = tuple(['king', 'queen', 'bishop', 'knight', 'rook', 'pawn'])
+>>> print(t3)
+('king', 'queen', 'bishop', 'knight', 'rook', 'pawn')
+>>> type(t3)
+<class 'tuple'>
+```
+
+If the argument is a sequence, the result is a tuple with the elemtns of the sequence:
+
+```none
+>>> name_tuple = tuple("Roberto")
+>>> print(name_tuple)
+('R', 'o', 'b', 'e', 'r', 't', 'o')
+```
+
+-
+
+### Single Element Tuples
+
+When creating a tuple with a single elmeent, you have to include a final comma:
+
+```none
+>>> t1 = 'a'
+>>> type(t1)
+<class 'str'>
+
+>>> t1 = 'a',
+>>> type(t1)
+<class 'tuple'>
+>>> print(t1)
+('a',)
+```
 
 -
 -
