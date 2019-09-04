@@ -1843,6 +1843,7 @@ True
 -
 
 # Tuples
+## Part 1
 
 -
 
@@ -1896,7 +1897,7 @@ Items in a tuple can be any type.
 <class 'tuple'>
 ```
 
-If the argument is a sequence, the result is a tuple with the elemtns of the sequence:
+If the argument is a sequence, the result is a tuple with the elements of the sequence:
 
 ```none
 >>> name_tuple = tuple("Roberto")
@@ -1908,7 +1909,7 @@ If the argument is a sequence, the result is a tuple with the elemtns of the seq
 
 ### Single Element Tuples
 
-When creating a tuple with a single elmeent, you have to include a final comma:
+When creating a tuple with a single element, you have to include a final comma.
 
 ```none
 >>> t1 = 'a'
@@ -1920,6 +1921,105 @@ When creating a tuple with a single elmeent, you have to include a final comma:
 <class 'tuple'>
 >>> print(t1)
 ('a',)
+```
+
+-
+
+### Tuples Are Immutable
+
+```none
+>>> sides = ('a', 'b')
+>>> sides[0] = 'z'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
+
+-
+-
+
+# Tuples
+## Part 2
+
+-
+
+### Tuple Assignment
+
+Suppose you needed to swap the values of variables a and b. A conventional solution would involve assigning one of the values to a temporary variable.
+
+```none
+>>> a = 1
+>>> b = 2
+>>> print(a, b)
+(1, 2)
+
+>>> temp = a
+>>> a = b
+>>> b = temp
+>>> print(a, b)
+(2, 1)
+```
+
+-
+
+### Tuple Assignment
+
+The left side is a tuple of variables.  
+The right side is a tuple of expressions.  
+Each value is assigned to its respective variable.  
+All the expressions on the right side are evaluated before any of the assignments.   
+The number of variables on the left and the number of values on the right have to be the same.  
+
+```none
+>>> a = 1
+>>> b = 2
+>>> print(a, b)
+(1, 2)
+>>> a, b = b, a
+>>> print(a, b)
+(2, 1)
+```
+
+-
+
+### Tuples As Return Values
+
+A function can only return one value.  
+A tuple can be used to effectively return multiple values.  
+
+```none
+def first_and_last(word):
+  return word[0], word[-1]
+
+print(first_and_last("monkey"))
+('m', 'y')
+```
+
+-
+
+### Tuples As Args - Gather
+
+Functions can take a variable number of arguments. A parameter name that begins with * gathers arguments into a tuple.
+
+```python
+def print_all(*args):
+    print(type(args))
+
+print_all("kit kat", "snickers", "milky way")
+```
+
+-
+
+### Tuples As Args - Scatter
+
+```python
+def sum(a, b):
+    return a + b
+
+print(sum(1, 2))
+
+t = (1, 2)
+print(sum(*t))
 ```
 
 -
