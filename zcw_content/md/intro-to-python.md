@@ -1144,7 +1144,7 @@ If the programmer fails to specify a base case that does not make a recursive ca
 -
 
 Python 3
-```python
+```none
 >>> name = input("What is your name?\n")
 What is your name?
 Seymour
@@ -1153,7 +1153,7 @@ Seymour
 ```
 
 Python 2
-```python
+```none
 >>> want = raw_input("What do you want\n")
 What do you want
 feed me
@@ -1226,7 +1226,7 @@ The for statement is used to iterate over the elements of a sequence (such as a 
 
 The for statement has the same structure as function definitions and if statements. (a header followed by an indented body). These are called compound statements.
 
-```python
+```none
 >>> for i in range(2):
 ...     print(i)
 ... 
@@ -2063,8 +2063,20 @@ In Python 2, the zip function returns a list of tuples.
 >>> type(result)
 <type 'list'>
 ```
+-
 
-### What Is It Used For?
+### Iterating With Zip
+
+```none
+>>> s = 'abc'
+>>> t = [0, 1, 2]
+>>> for pair in zip(s, t):
+...     print(pair)
+... 
+('a', 0)
+('b', 1)
+('c', 2)
+```
 
 -
 -
@@ -2074,6 +2086,23 @@ In Python 2, the zip function returns a list of tuples.
 -
 
 ### What is it? 
+
+A function that takes an interable and allows the iteration over a sequence of pairs; an index and an element from the given iterable.  
+Returns an enumerate object.
+
+-
+
+### How Does It Work?
+
+```none
+>>> trilogy = ['The Matrix', 'The Matrix Reloaded', 'The Matrix Revolutions']
+>>> for index, element in enumerate(trilogy, start= 1):
+...     print(index, element)
+... 
+1 The Matrix
+2 The Matrix Reloaded
+3 The Matrix Revolutions
+```
 
 -
 -
