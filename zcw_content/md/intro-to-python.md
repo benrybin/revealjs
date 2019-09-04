@@ -2025,6 +2025,59 @@ print(sum(*t))
 -
 -
 
+# zip Built-in Function
+
+-
+
+### What Is It? 
+
+A function that takes two or more sequences and interleaves them.  
+Returns a zip object. 
+
+-
+
+### How Does It Work?
+
+```none
+>>> s = 'abc'
+>>> t = [0, 1, 2]
+>>> result = zip(s, t)
+>>> type(result)
+<class 'zip'>
+>>> print(result)
+<zip object at 0x10b7c2188>
+```
+
+-
+
+### Special Note About Python 2
+
+In Python 2, the zip function returns a list of tuples.
+
+```none
+>>> s = 'abc'
+>>> t = [0, 1, 2]
+>>> zip(s, t)
+[('a', 0), ('b', 1), ('c', 2)]
+>>> result = zip(s, t)
+>>> type(result)
+<type 'list'>
+```
+
+### What Is It Used For?
+
+-
+-
+
+# enumerate Built-in Function
+
+-
+
+### What is it? 
+
+-
+-
+
 # Dictionaries
 
 -
