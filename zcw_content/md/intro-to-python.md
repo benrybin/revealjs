@@ -2124,7 +2124,7 @@ Returns an enumerate object.
 
 ### What is it? 
 
-A dictionary is an unordered mapping of key vale pairs.  
+A dictionary is an unordered mapping of key/value pairs.  
 Dictionaries are indexed by keys of any immutable type.  
 
 -
@@ -2145,7 +2145,7 @@ items_to_prices = {'milk', '4.5', 'bread': '2.55', 'beef': '7.50'}
 Use keys to look up corresponding values.
 
 ```none
-english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
 >>> english_to_spanish['one']
 'uno'
 >>> english_to_spanish['four']
@@ -2161,7 +2161,7 @@ KeyError: 'four'
 The in operator can be used to check if a key is present in the dictionary.
 
 ```none
-english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
 >>> 'one' in english_to_spanish
 True
 >>> 'four' in english_to_spanish
@@ -2173,22 +2173,56 @@ False
 ### The In Operator - Values
 
 ```none
->>> spells = {'Riddikulus': 'Transforms nasty Boggarts from something scary into something silly', 'Expelliarmus': 'Basically the only spell Harry ever uses when he is in a duel', 'Lumos': 'Flashlight'}
->>> spells.keys()
-dict_keys(['Riddikulus', 'Expelliarmus', 'Lumos'])
->>> spells.values()
-dict_values(['Transforms nasty Boggarts from something scary into something silly', 'Basically the only spell Harry ever uses when he is in a duel', 'Flashlight'])
->>> 'Flashlight' in spells.values()
+>>> english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> english_to_spanish.keys()
+dict_keys(['one', 'two', 'three'])
+>>> english_to_spanish.values()
+dict_values(['uno', 'dos', 'tres'])
+>>> 'uno' in english_to_spanish.values()
 True
 ```
 
 -
 
-### Adding Items To Dictionary
+### Updating Items In A Dictionary
+
+If the item already exist, it will be updated. If the item does not exist, it will be added.
+```none
+>>> spells = {}
+>>> spells['Expelliarmus'] = 'The only spell Harry knows.'
+>>> print(spells)
+{'Expelliarmus': 'The only spell Harry knows.'}
+>>> spells['Expelliarmus'] = 'A useless spell that can be ignored if you own a Nintendo Wii hand strap.'
+>>> print(spells)
+{'Expelliarmus': 'A useless spell that can be ignored if you own a Nintendo Wii hand strap.'}
+```
 
 -
 
 ### Deleting Items From Dictionary
+
+
+```none
+>>> nums_to_words = {1: 'one', 2: 'two', 3: 'three'}
+>>> print(nums_to_words)
+{1: 'one', 2: 'two', 3: 'three'}
+```
+
+del
+```none
+>>> del nums_to_words[1]
+>>> print(nums_to_words)
+{2: 'two', 3: 'three'}
+```
+
+pop
+```none
+>>> item = nums_to_words.pop(3)
+>>> print(item)
+three
+>>> print(nums_to_words)
+{2: 'two'}
+```
 
 -
 -
