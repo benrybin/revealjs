@@ -2124,7 +2124,7 @@ Returns an enumerate object.
 
 ### What is it? 
 
-A dictionary is an unordered mapping of key/value pairs.  
+A dictionary is an unordered mapping of key-value pairs.  
 Dictionaries are indexed by keys of any immutable type.  
 
 -
@@ -2229,6 +2229,72 @@ three
 
 # Dictionaries
 ## Part 2
+
+-
+
+### Dictionary Methods - get
+
+Returns the value for key if key is in the dictionary, else returns a default item.  
+This method avoids KeyError.
+
+```none
+>>> xmen_powers = {'Phoenix': 'Telepathic and telekinetic', 'Wolverine': 'Healing and claws'}
+>>> result = xmen_powers.get('Wolverine')
+>>> print(result)
+Healing and claws
+```
+
+Default value provided
+```none
+>>> result = xmen_powers.get('Nightcrawler', 'Unknown Powers')
+>>> print(result)
+Unknown Powers
+```
+
+Default value not provided
+```none
+>>> result = xmen_powers.get('Captain Underpants') 
+>>> print(result)
+None
+```
+
+-
+
+### Dictionary Iteration
+
+```none
+>>> xmen_powers = {'Phoenix': 'Telepathic and telekinetic', 'Wolverine': 'Healing and claws'}
+>>> for key in xmen_powers:
+...      print("key: {0:20s} \tValue: {1:s}".format(key, xmen_powers[key]))
+... 
+key: Phoenix              	Value: Telepathic and telekinetic
+key: Wolverine            	Value: Healing and claws
+```
+
+-
+
+### Dictionary Methods - items
+
+The items() method in dictionaries returns a sequence of tuples where each tuple is a key-value pair.
+
+```none
+>>> simple_dict = {'a': 1, 'b': 2, 'c': 3}
+>>> simple_dict.items()
+dict_items([('a', 1), ('b', 2), ('c', 3)])
+```
+
+-
+
+### Iterating Dictionaries With items Method
+
+```none
+>>> for key, value in simple_dict.items():
+...     print(key, value)
+... 
+a 1
+b 2
+c 3
+```
 
 -
 -
