@@ -1826,6 +1826,11 @@ None
 -
 -
 
+# BREAK & EXERCISES 
+
+-
+-
+
 # Aliasing
 
 The association of a variable with an object is called a reference.  
@@ -2107,6 +2112,11 @@ Returns an enumerate object.
 -
 -
 
+# BREAK & EXERCISES 
+
+-
+-
+
 # Dictionaries
 ## Part 1
 
@@ -2186,6 +2196,7 @@ True
 # Dictionaries
 ## Part 2
 
+-
 -
 
 # Files
