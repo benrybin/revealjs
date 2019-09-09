@@ -2108,7 +2108,102 @@ Returns an enumerate object.
 -
 
 # Dictionaries
+## Part 1
+
+-
+
+### What is it? 
+
+A dictionary is an unordered mapping of key vale pairs.  
+Dictionaries are indexed by keys of any immutable type.  
+
+-
+
+### Creating A Dictionary
+
+```python
+empty_dict = {}
+another_empty_dict = dict()
+phone_numbers = {'mom': '302-123-4567', 'dad': '302-123-4567', 'my_boy_blue': '302-654-9876'}
+items_to_prices = {'milk', '4.5', 'bread': '2.55', 'beef': '7.50'}
+```
+
+-
+
+### Accessing Elements From A Dictionary
+
+Use keys to look up corresponding values.
+
+```none
+english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> english_to_spanish['one']
+'uno'
+>>> english_to_spanish['four']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'four'
+```
+
+-
+
+### The In Operator - Keys
+
+The in operator can be used to check if a key is present in the dictionary.
+
+```none
+english_to_spanish = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> 'one' in english_to_spanish
+True
+>>> 'four' in english_to_spanish
+False
+```
+
+-
+
+### The In Operator - Values
+
+```none
+>>> spells = {'Riddikulus': 'Transforms nasty Boggarts from something scary into something silly', 'Expelliarmus': 'Basically the only spell Harry ever uses when he is in a duel', 'Lumos': 'Flashlight'}
+>>> spells.keys()
+dict_keys(['Riddikulus', 'Expelliarmus', 'Lumos'])
+>>> spells.values()
+dict_values(['Transforms nasty Boggarts from something scary into something silly', 'Basically the only spell Harry ever uses when he is in a duel', 'Flashlight'])
+>>> 'Flashlight' in spells.values()
+True
+```
+
+-
+
+### Adding Items To Dictionary
+
+-
+
+### Deleting Items From Dictionary
 
 -
 -
 
+# Dictionaries
+## Part 2
+
+-
+
+# Files
+
+-
+-
+
+# Classes & Objects
+
+-
+-
+
+# Classes & Functions
+
+-
+-
+
+# Inheritance
+
+-
+-
