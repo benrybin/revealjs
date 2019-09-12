@@ -2299,7 +2299,112 @@ c 3
 -
 -
 
-# Files
+# BREAK & EXERCISES 
+
+-
+-
+
+# Persistence
+## Files
+
+-
+
+### The open Built-in Function
+
+Use the [open](https://docs.python.org/3/library/functions.html#open) built-in function to acquire a file object.
+
+```none
+>>> fout = open('new_file', 'w')
+>>> fout.write("Hello file\n")
+11
+>>> fout.close()
+>>> fin = open('new_file', 'r')
+>>> for line in fin:
+...     print(line)
+... 
+Hello file
+
+```
+
+-
+
+### Available Modes
+
+| character | Meaning                                                         |
+| --------- | --------------------------------------------------------------- |
+| r         | open for reading (default)                                      |
+| w         | open for writing, truncating the file first                     |
+| x         | open for exclusive creation, failing if the file already exists |
+| a         | open for writing, appending to the end of the file if it exists |
+| b         | binary mode                                                     |
+| t         | text mode (default)                                             | 
+| +         | open a disk file for updating (reading and writing)             |
+
+-
+
+### os Module
+
+
+
+-
+-
+
+# Exceptions
+
+-
+
+### What Is It? 
+
+Exceptions are a means of breaking out of the normal flow of control of a code block in order to handle errors or other exceptional conditions.
+
+```none
+>>> fin = open('i_like_turtles.py', 'r')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'i_like_turtles.py'
+
+```
+
+-
+
+### The Try Statement
+
+The [try](https://docs.python.org/3/reference/compound_stmts.html#try) statement specifies exception handlers and/or cleanup code for a group of statements.  
+The except clause(s) specify one or more exception handlers. When no exception occurs in the try clause, no exception handler is executed.
+
+```none
+>>> try:
+...     fin = open('i_like_turtles.py', 'r')
+... except FileNotFoundError:
+...     print('The file does not exist!')
+... 
+The file does not exist!
+
+```
+
+-
+-
+
+# Persistence
+## Database
+
+-
+
+### dbm Module
+
+-
+
+### Pickling
+
+-
+-
+
+# BREAK & EXERCISES 
+
+-
+-
+
+# Writing Modules
 
 -
 -
