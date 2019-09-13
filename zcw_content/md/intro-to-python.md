@@ -1217,6 +1217,25 @@ range(0, 10)
 
 -
 
+### Special Note About Python 2
+
+In Python 2, the range function would simply return a list. 
+
+```none
+>>> print(x)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+>>> a = range(10)
+>>> print(a)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> type(a)
+<type 'list'>
+>>> type(range)
+<type 'builtin_function_or_method'>
+```
+
+-
+
 ### More On Range 
 
 We wil continue to talk about the range type further in the context of sequences and iterations in the upcoming sections.
