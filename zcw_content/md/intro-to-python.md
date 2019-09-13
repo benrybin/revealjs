@@ -2506,3 +2506,84 @@ The [with](https://docs.python.org/3/reference/compound_stmts.html#with) stateme
 
 -
 -
+
+# List Comprehensions
+
+-
+
+### What Is It?
+
+[List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html?highlight=list%20comprehension) provide a consise way to create lists.
+
+-
+
+### Why?
+
+Suppose you want to generate a list with only items that meet a certain criteria.
+
+```none
+>>> output = []
+>>> for value in range(10):
+...     if value > 5:
+...         output.append(str(value))
+... 
+>>> output
+['6', '7', '8', '9']
+```
+
+-
+
+### How
+
+The same code can be simplified with list comprehensions.
+
+```none
+>>> ouput = [str(value) for value in range(10) if value > 5]
+>>> output
+['6', '7', '8', '9']
+```
+-
+
+### Breaking It Down 
+
+* Expression for final value
+* for clause (iteration)
+* if clause (conditional to determine which items should be included)
+
+-
+-
+
+# Generator Expressions
+
+-
+
+### What Is It? 
+
+A [Generator expression](https://docs.python.org/3/reference/expressions.html?highlight=generator#generator-expressions) yeilds a new generator object.  
+Generator objects are used to lazily iterate a sequence by levaraging the power of iteration.
+
+-
+
+### Why?
+
+-
+
+### How 
+
+-
+-
+
+# What's Next?
+
+-
+
+### Recommended readings
+
+[Pro Python](https://www.apress.com/gp/book/9781484203347)
+
+-
+-
+
+# The End
+
+![Parrot](img/parrot.jpg)
