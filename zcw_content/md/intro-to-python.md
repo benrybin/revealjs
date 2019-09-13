@@ -2418,6 +2418,30 @@ The file does not exist!
 ```
 
 -
+
+### The except Clause 
+
+The except clause(s) specify one or more exception handlers.
+
+-
+
+### The else Clause
+
+A way to specify a block of code should be run only if no exceptions were raised at all,
+
+-
+
+### The finally clause
+
+If finally is present, it specifies a ‘cleanup’ handler.
+
+-
+
+### The with Statement
+
+The [with](https://docs.python.org/3/reference/compound_stmts.html#with) statement is used to wrap the execution of a block with methods defined by a context manager.
+
+-
 -
 
 # Persistence
