@@ -1194,11 +1194,13 @@ feed me
 
 ### What Is It? 
 
-The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops.
+The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops.  
 
 -
 
 ### Quick Intro
+
+The range object itself doesn’t contain any of the values in the sequence. Instead, it generates them one at a time, on demand, during iteration. 
 
 ```none
 >>> a = range(10)
@@ -1208,6 +1210,9 @@ range(0, 10)
 <class 'range'>
 >>> type(range)
 <class 'type'>
+>>> list(a)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 ```
 
 -
@@ -1230,7 +1235,7 @@ If you just can't wait, feel free to learn more about it in the docs.
 
 ### What Is It?
 
-Iteration is the ability to run a block of statements repeatedly.
+Iteration is the ability to run a block of statements repeatedly.  
 
 -
 
