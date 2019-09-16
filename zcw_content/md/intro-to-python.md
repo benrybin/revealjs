@@ -2347,6 +2347,18 @@ c 3
 ```
 
 -
+
+### zip Built-in Function Revisited
+
+```none
+>>> keys = ['a', 'b', 'c']
+>>> values = [1, 2, 3]
+>>> my_dict = dict(zip(keys, values))
+>>> print(my_dict)
+{'a': 1, 'b': 2, 'c': 3}
+```
+
+-
 -
 
 # BREAK & EXERCISES 
@@ -2491,9 +2503,13 @@ The [with](https://docs.python.org/3/reference/compound_stmts.html#with) stateme
 
 ### dbm Module
 
+The [dbm module](https://docs.python.org/3/library/dbm.html) provides an interface for creating adn updating database files.
+
 -
 
 ### Pickling
+
+The [pickle module](https://docs.python.org/3/library/pickle.html) can be used to serialize and de-serialize a Python object.
 
 -
 -
