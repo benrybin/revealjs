@@ -1881,6 +1881,8 @@ None
 
 # Aliasing
 
+-
+
 The association of a variable with an object is called a reference.  
 In this example, there are two references to the same object.
 When an object has more than one reference, we say that the object is aliased.
@@ -2429,7 +2431,6 @@ FileNotFoundError: [Errno 2] No such file or directory: 'i_like_turtles.py'
 ### The Try Statement
 
 The [try](https://docs.python.org/3/reference/compound_stmts.html#try) statement specifies exception handlers and/or cleanup code for a group of statements.  
-The except clause(s) specify one or more exception handlers. When no exception occurs in the try clause, no exception handler is executed.
 
 ```none
 >>> try:
@@ -2445,7 +2446,16 @@ The file does not exist!
 
 ### The except Clause 
 
-The except clause(s) specify one or more exception handlers.
+The except clause(s) specifies one or more exception handlers. When no exception occurs in the try clause, no exception handler is executed.
+
+```none
+>>> try:
+...    print(100 / 10)
+... except ZeroDivisionError:
+...    print("Division by zero is not allowed.")
+... 
+10.0
+```
 
 -
 
@@ -2453,11 +2463,17 @@ The except clause(s) specify one or more exception handlers.
 
 A way to specify a block of code should be run only if no exceptions were raised at all,
 
+```none
+```
+
 -
 
 ### The finally clause
 
 If finally is present, it specifies a ‘cleanup’ handler.
+
+```none
+```
 
 -
 
