@@ -2366,6 +2366,133 @@ c 3
 -
 -
 
+# Sets 
+## Part 1
+
+-
+
+### What is it? 
+
+A [set](https://docs.python.org/3/library/stdtypes.html#set) works much like a list but without allowing any duplicates.
+
+-
+
+### Why 
+
+Common uses include:
+
+* membership testing
+* removing duplicates from a sequence
+* computing mathematical operations such as intersection, union, difference, and symmetric difference
+
+-
+
+### Creating A Set - Using Curly Braces
+
+```none
+>>> my_set = {1, 2, 3, 4}
+>>> print(my_set)
+{1, 2, 3, 4}
+>>> type(my_set)
+<class 'set'>
+```
+
+-
+
+### Creating A Set - Using Built-in Function
+
+* The built-in set function takes any sequence as its argument.
+* Items in a set are not ordered.
+
+```none
+>>> my_other_set = set(['a', 'a', 'b', 'c'])
+>>> print(my_other_set)
+{'b', 'a', 'c'}
+>>> yet_another_set = set()
+>>> print(yet_another_set)
+set()
+```
+
+-
+
+### Mebership Testing
+
+Use the in keyword as with other types to determine membership.
+
+```none
+>>> zoo_animals = set(['lion', 'elephant', 'rhino'])
+>>> 'pigeon' in zoo_animals
+False
+```
+
+-
+-
+
+# Sets 
+## Part 2
+
+-
+
+### add
+
+If the item being added already exists, nothing happens. Otherwise the new item is added.
+
+```none
+```
+
+-
+
+### update
+
+Adds the contents of a new dictionary 
+
+```none
+>>> set_1 = {1, 2, 3}
+>>> set_2 = set()
+>>> set_2.update(set_1)
+>>> set_2
+{1, 2, 3}
+```
+
+-
+
+### remove 
+
+Removes an item from the set. If the item isn't present in the set, it raises a KeyError.
+
+```none
+```
+
+-
+
+### discard
+
+Just like remove but does not raise exception.
+
+```none
+```
+
+-
+
+### pop
+
+Arbitrarily removes and returns an item from the set.
+
+```none
+```
+
+-
+
+### clear
+
+Removes all items in one shot.
+
+```none
+```
+
+-
+-
+
 # Persistence
 ## Files
 
