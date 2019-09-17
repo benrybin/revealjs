@@ -1201,16 +1201,16 @@ The range type represents an immutable sequence of numbers and is commonly used 
 
 The range object itself doesn’t contain any of the values in the sequence. Instead, it generates them one at a time, on demand, during iteration. 
 
-```none
->>> a = range(10)
->>> print(a)
-range(0, 10)
->>> type(a)
-<class 'range'>
->>> type(range)
-<class 'type'>
->>> list(a)
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```python
+a = range(10)
+print(a)
+# range(0, 10)
+type(a)
+# <class 'range'>
+type(range)
+# <class 'type'>
+list(a)
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ```
 
@@ -1220,17 +1220,14 @@ range(0, 10)
 
 In Python 2, the range function would simply return a list. 
 
-```none
->>> print(x)
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
->>> 
->>> a = range(10)
->>> print(a)
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
->>> type(a)
-<type 'list'>
->>> type(range)
-<type 'builtin_function_or_method'>
+```python
+a = range(10)
+print(a)
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+type(a)
+# <type 'list'>
+type(range)
+# <type 'builtin_function_or_method'>
 ```
 
 -
@@ -1273,19 +1270,19 @@ The for statement is used to iterate over the elements of a sequence (such as a 
 
 The for statement has the same structure as function definitions and if statements. (a header followed by an indented body). These are called compound statements.
 
-```none
->>> for i in range(2):
-...     print(i)
-... 
-0
-1
+```python
+for i in range(2):
+    print(i)
+
+# 0
+# 1
 ```
 
 -
 
 ### The while Statement
 
-```
+```python
 def countdown(n):
     while(n > 0):
         print(n)
@@ -1301,20 +1298,20 @@ countdown(5)
 
 The break statement breaks out of the innermost enclosing for or while loop.
 
-```none
->>> for i in range(10):
-...     print(i)
-...     if(i == 5):
-...        print("I have found what I was looking for.")
-...        break
-... 
-0
-1
-2
-3
-4
-5
-I have found what I was looking for.
+```python
+for i in range(10):
+    print(i)
+    if(i == 5):
+       print("I have found what I was looking for.")
+       break
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# I have found what I was looking for.
 ```
 
 -
@@ -1323,23 +1320,23 @@ I have found what I was looking for.
 
 The continue statement continues with the next iteration of the loop.
 
-```none
->>> for i in range(10):
-...     if(i == 5):
-...         print("Skipping number 5")
-...         continue
-...     print(i)
-... 
-0
-1
-2
-3
-4
-Skipping number 5
-6
-7
-8
-9
+```python
+for i in range(10):
+    if(i == 5):
+      print("Skipping number 5")
+        continue
+    print(i)
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# Skipping number 5
+# 6
+# 7
+# 8
+# 9
 ```
 
 -
@@ -1348,12 +1345,11 @@ Skipping number 5
 
 The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
 
-```none
->>> def master_piece():
-...     pass
-... 
->>> master_piece()
->>>
+```python
+def master_piece():
+    pass
+
+master_piece()
 ```
 
 -
@@ -1381,10 +1377,10 @@ The pass statement does nothing. It can be used when a statement is required syn
 
 A string is an immutable sequence of characters.
 
-```none
->>> name = 'Marklar'
->>> print(name)
-'Marklar'
+```python
+name = 'Marklar'
+print(name)
+# 'Marklar'
 ```
 
 -
@@ -1393,14 +1389,14 @@ A string is an immutable sequence of characters.
 
 An index is an offset from the beginning of a sequence.
 
-```none
->>> name = 'Marklar'
->>> first_letter = name[0]
->>> print(first_letter)
-'M'
->>> second_letter = name[1]
->>> print(second_letter)
-'a'
+```python
+name = 'Marklar'
+first_letter = name[0]
+print(first_letter)
+# 'M'
+second_letter = name[1]
+print(second_letter)
+# 'a'
 ```
 
 -
@@ -1409,13 +1405,13 @@ An index is an offset from the beginning of a sequence.
 
 You can use an expression that contains variables and operators to describe the index.
 
-```none
->>> i = 0
->>> name = "Guido"
->>> print(name[i])
-G
->>> print(name[i + 1])
-u
+```python
+i = 0
+name = "Guido"
+print(name[i])
+# G
+print(name[i + 1])
+# u
 ```
 
 -
@@ -1437,33 +1433,33 @@ TypeError: string indices must be integers, not float
 
 [Len](https://docs.python.org/3/library/functions.html#len) is a built-in function that returns the length of an object. When the argument passed to it is a string, it returns the number of characters in the string.
 
-```none
->>> len('one')
-3
->>> len('four')
-4
+```python
+len('one')
+# 3
+len('four')
+# 4
 ```
 
 -
 
 ### The Last Item 
 
-```none
->>> name = "Roberto"
->>> print(len(name))
-7
->>> last_char = name[len(name) - 1]
->>> print(last_char)
-o
+```python
+name = "Roberto"
+print(len(name))
+# 7
+last_char = name[len(name) - 1]
+print(last_char)
+# o
 ```
 
 Or we can use negative indices
 
-```none
->>> print(name[-1])
-o
->>> print(name[-2])
-t
+```python
+print(name[-1])
+# o
+print(name[-2])
+# t
 ```
 
 -
@@ -1476,36 +1472,36 @@ t
 
 ### While Loop
 
-```none
->>> index = 0
->>> while index < len(word):
-...     letter = word[index]
-...     print(letter)
-...     index = index + 1
-... 
-p
-y
-t
-h
-o
-n
+```python
+index = 0
+while index < len(word):
+    letter = word[index]
+    print(letter)
+    index = index + 1
+
+# p
+# y
+# t
+# h
+# o
+# n
 ```
 
 -
 
 ### For Loop
 
-```none
->>> word = 'python'
->>> for letter in word:
-...     print(letter)
-... 
-p
-y
-t
-h
-o
-n
+```python
+word = 'python'
+for letter in word:
+    print(letter)
+
+# p
+# y
+# t
+# h
+# o
+# n
 ```
 
 -
@@ -1514,18 +1510,21 @@ n
 
 A slice is a segment of a sequence. 
 
-```none
->>> full_name = 'Roberto DeDeus'
->>> print(full_name)
-Roberto DeDeus
->>> first_name = full_name[:7]
->>> print(first_name)
-Roberto
->>> last_name = full_name[8:]
->>> print(last_name)
-DeDeus
->>> full_name[7:8]
-' '
+```python
+full_name = 'Roberto DeDeus'
+print(full_name)
+# Roberto DeDeus
+
+first_name = full_name[:7]
+print(first_name)
+# Roberto
+
+last_name = full_name[8:]
+print(last_name)
+# DeDeus
+
+full_name[7:8]
+# ' '
 ```
 
 -
@@ -1544,23 +1543,23 @@ TypeError: 'str' object does not support item assignment
 
 ### String Methods - upper
 
-```none
->>> fruit = 'banana'
->>> upper_banana = fruit.upper()
->>> print(upper_banana)
-BANANA
+```python
+fruit = 'banana'
+upper_banana = fruit.upper()
+print(upper_banana)
+# BANANA
 ```
 
 -
 
 ### String Methods - find
 
-```none
->>> fruit = 'apple'
->>> fruit.find('p')
-1
->>> fruit.find('i')
--1
+```python
+fruit = 'apple'
+fruit.find('p')
+# 1
+fruit.find('i')
+# -1
 ```
 
 -
