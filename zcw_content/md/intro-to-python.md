@@ -2415,7 +2415,7 @@ set()
 
 -
 
-### Mebership Testing
+### Membership Testing
 
 Use the in keyword as with other types to determine membership.
 
@@ -2701,6 +2701,7 @@ The same code can be simplified with list comprehensions.
 >>> output
 ['6', '7', '8', '9']
 ```
+
 -
 
 ### Breaking It Down 
