@@ -147,48 +147,48 @@ Execute a script file which contains python code (by convention python files hav
 
 ### Addition
 
-```none
->>> 1 + 1
-2
+```python
+1 + 1
+# 2
 
->>> 40 + 2
-42
+40 + 2
+# 42
 ```
 
 -
 
 ### Subtraction 
 
-```none
->>> 1 - 1
-0
+```python
+1 - 1
+# 0
 
->>> 43 - 1
-42
+43 - 1
+# 42
 ```
 
 -
 
 ### Multiplication
 
-```none
->>> 7 * 7
-49
+```python
+7 * 7
+# 49
 
->>> 21 * 2
-42
+21 * 2
+# 42
 ```
 
 -
 
 ### Division
 
-```none
->>> 1 / 1
-1.0
+```python
+1 / 1
+# 1.0
 
->>> 84 / 2
-42.0
+84 / 2
+# 42.0
 ```
 
 -
@@ -197,11 +197,11 @@ Execute a script file which contains python code (by convention python files hav
 
 The floor division operator, //, divides two numbers and rounds down to an integer.
 
-```none
->>> minutes = 105
->>> hours = minutes // 60
->>> hours
-1
+```python
+minutes = 105
+hours = minutes // 60
+hours
+# 1
 ```
 
 -
@@ -216,24 +216,24 @@ and floating-point division if either operand is a float.
 
 The modulus operator divides two numbers and returns the remainder.
 
-```none
->>> 2 % 2
-0
+```python
+2 % 2
+# 0
 
->>> 3 % 2
-1
+3 % 2
+# 1
 ```
 
 -
 
 ### Exponentiation
 
-```none
->>> 2 ** 2
-4
+```python
+2 ** 2
+# 4
 
->>> 3 ** 3
-27
+3 ** 3
+# 27
 ```
 
 -
@@ -269,24 +269,24 @@ The modulus operator divides two numbers and returns the remainder.
 
 Given an argument, the type function return the type of an object.
 
-```none
->>> type(True)
-<class 'bool'>
+```python
+type(True)
+# <class 'bool'>
 
->>> type(1)
-<class 'int'>
+type(1)
+# <class 'int'>
 
->>> type(42.0)
-<class 'float'>
+type(42.0)
+# <class 'float'>
 
->>> type('Hello, Python!')
-<class 'str'>
+type('Hello, Python!')
+# <class 'str'>
 
->>> type('42.0')
-<class 'str'>
+type('42.0')
+# <class 'str'>
 
->>> type(str)
-<class 'type'>
+type(str)
+# <class 'type'>
 ```
 
 -
@@ -319,18 +319,18 @@ pi = 3.1415926535897932
 
 ### type Function Revisited
 
-```none
->>> a = 35
->>> type(a)
-<class 'int'>
+```python
+a = 35
+type(a)
+# <class 'int'>
 
->>> greeting = 'Oi'
->>> type(greeting)
-<class 'str'>
+greeting = 'Oi'
+type(greeting)
+# <class 'str'>
 
->>> pi = 3.1415926535897932
->>> type(pi)
-<class 'float'>
+pi = 3.1415926535897932
+type(pi)
+# <class 'float'>
 ```
 
 -
@@ -367,15 +367,15 @@ pi = 3.1415926535897932
 An **expression** is a combination of values, variables, and operators.  
 A value all by itself is considered an expression, and so is a variable.
 
-```none
->>> 42
+```python
 42
+# 42
 
->>> a
-35
+a
+# 35
 
->>> a + 42
-77
+a + 42
+# 77
 ```
 
 -
@@ -384,9 +384,9 @@ A value all by itself is considered an expression, and so is a variable.
 
 A **statement** is a unit of code that has an effect, like creating a variable or displaying a value.
 
-```none
->>> a = 35
->>> print(a)
+```python
+a = 35
+print(a)
 ```
 
 -
@@ -420,12 +420,12 @@ A **statement** is a unit of code that has an effect, like creating a variable o
 
 ### Concatenation
 
-```none
->>> 'eggs '+ 'and ' + 'ham'
-'eggs and ham'
+```python
+'eggs '+ 'and ' + 'ham'
+# 'eggs and ham'
 
->>> '3' + '3'
-'33'
+'3' + '3'
+# '33'
 ```
 
 -
@@ -442,18 +442,18 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
 You can convert a numeric value to a string with the built-in function str().
-```none
->>> str(3) + '3'
-'33'
+```python
+str(3) + '3'
+# '33'
 ```
 
 -
 
 ### Repetition
 
-```none
->>> 'Spam' * 3
-'SpamSpamSpam'
+```python
+'Spam' * 3
+# 'SpamSpamSpam'
 ```
 
 -
@@ -471,9 +471,9 @@ TypeError: can't multiply sequence by non-int of type 'str'
 
 You can convert a string to an integer using the built-in function int().
 
-```none
->>> 'Spam' * int('3')
-'SpamSpamSpam'
+```python
+'Spam' * int('3')
+# 'SpamSpamSpam'
 ```
 
 -
@@ -593,12 +593,12 @@ def best_ice_cream():
 
 Defining a function creates a function object, which has type function:
 
-```none
->>> type(best_ice_cream)
-<type 'function'>
+```python
+type(best_ice_cream)
+# <type 'function'>
 
->>> print(best_ice_cream)
-<function best_ice_cream at 0x1073652a8>
+print(best_ice_cream)
+# <function best_ice_cream at 0x1073652a8>
 ```
 
 -
@@ -617,12 +617,12 @@ The rules for function names are the same as for variable names.
 
 ### Function Calls
 
-```none
->>> def best_ice_cream():
-...     print("Mint chocolate chip.")
-... 
->>> best_ice_cream()
-Mint chocolate chip.
+```python
+def best_ice_cream():
+    print("Mint chocolate chip.")
+
+best_ice_cream()
+# Mint chocolate chip.
 ```
 
 The function definition has to run before the function gets called.
@@ -640,11 +640,11 @@ The function definition has to run before the function gets called.
 * Some functions require one or more arguments. 
 * math.power takes two, the base and the exponent.
 
-```none
->>> import math
->>> result = math.pow(2, 3)
->>> print(result)
-8.0
+```python
+import math
+result = math.pow(2, 3)
+print(result)
+# 8.0
 ```
 
 -
@@ -653,32 +653,32 @@ The function definition has to run before the function gets called.
 
 Inside the function, arguments are assigned to variables called parameters.
 
-```none
->>> def favorite_ice_cream(fav_ice_cream):
-...     print("Your favorite ice cream is " + fav_ice_cream)
-... 
->>> favorite_ice_cream("mint chocolate chip")
-Your favorite ice cream is mint chocolate chip
+```python
+def favorite_ice_cream(fav_ice_cream):
+    print("Your favorite ice cream is " + fav_ice_cream)
+
+favorite_ice_cream("mint chocolate chip")
+# Your favorite ice cream is mint chocolate chip
 ```
 
 -
 
 ### Functions Can Call Functions
 
-```none
->>> def say_hello():
-...     print("Hello")
-... 
->>> def say_hello_two_times():
-...     say_hello()
-...     say_hello()
-... 
->>> say_hello()
-Hello
->>> 
->>> say_hello_two_times()
-Hello
-Hello
+```python
+def say_hello():
+    print("Hello")
+
+def say_hello_two_times():
+    say_hello()
+    say_hello()
+
+say_hello()
+# Hello
+
+say_hello_two_times()
+# Hello
+# Hello
 ```
 
 -
@@ -687,22 +687,25 @@ Hello
 
 Variables created inside of a function are local.
 
-```
->>> name = 'Alice'
->>> def print_name():
-...     name = 'Bob'
-...     print(name)
-... 
->>> def print_other_name():
-...     name = 'John'
-...     print(name)
-... 
->>> print_name()
-Bob 
->>> print_other_name()
-John
->>> print(name)
-Alice
+```python
+name = 'Alice'
+
+def print_name():
+    name = 'Bob'
+    print(name)
+
+def print_other_name():
+    name = 'John'
+    print(name)
+
+print_name()
+# Bob 
+
+print_other_name()
+# John
+
+print(name)
+# Alice
 ```
 
 -
@@ -750,15 +753,14 @@ A boolean expression is an expression that is either true or false.
 
 ### Examples
 
-```none
->>> 5 == 5
-True
->>> 5 == 6
-False
->>> 5 > 6
-False
->>> 5 < 6
-True
+```python
+5 == 5         # True
+
+5 == 6         # False
+
+5 > 6          # False
+
+5 < 6          # True
 ```
 
 -
@@ -788,98 +790,92 @@ One of the operators that compares its operands.
 
 ### ==
 
-```none
->>> 0 == 0
-True
->>> 'a' == 'b'
-False
->>> True == True
-True
->>> True == False
-False
+```python
+0 == 0         # True
 
+'a' == 'b'     # False
+
+True == True   # True
+
+True == False  # False
 ```
 
 -
 
 ### !=
 
-```none
->>> 0 != 0
-False
->>> 'a' != 'b'
-True
->>> True != True
-False
->>> True !=  False
-True
+```python
+0 != 0         # False
+
+'a' != 'b'     # True
+
+True != True   # False
+
+True !=  False # True
 ```
 
 -
 
 ### >
 
-```none
->>> 1 > 0
-True
->>> 0 > 1
-False
->>> 'a' > 'b'
-False
->>> 'b' > 'a'
-True
->>> True > False
-True
->>> False > True
-False
+```python
+1 > 0          # True
+
+0 > 1          # False
+
+'a' > 'b'      # False
+
+'b' > 'a'      # True
+
+True > False   # True
+
+False > True   # False
 ```
 
 -
 
 ### <
 
-```none
->>> 1 < 0
-False
->>> 0 < 1
-True
->>> 'a' < 'b'
-True
->>> 'b' < 'a'
-False
->>> True < False
-False
->>> False < True
+```python
+1 < 0          # False
+
+0 < 1          # True
+
+'a' < 'b'      # True
+
+'b' < 'a'      # False
+
+True < False   # False
+
+False < True   # True
 ```
 
 -
 
 ### >=
 
-```none
->>> 0 >= 0
-True
->>> 0 >= 1
-False
->>> 'a' >= 'a'
-True
->>> 'a' >= 'b'
-False
+```python
+0 >= 0         # True
+
+0 >= 1         # False
+
+'a' >= 'a'     # True
+
+'a' >= 'b'     # False
 ```
 
 -
 
 ### <=
 
-```none
->>> 0 <= 0
-True
->>> 0 <= 1
-True
->>> 'a' <= 'b'
-True
->>> 'b' <= 'a'
-False
+```python
+0 <= 0         # True
+
+0 <= 1         # True
+
+'a' <= 'b'     # True
+
+'b' <= 'a'     # False
 ```
 
 -
@@ -903,13 +899,13 @@ There are three logical operators:
 
 Evaluates to True if both conditions are true
 
-```none
->>> x = 5
->>> x > 0 and x < 10
-True
+```python
+x = 5
+x > 0 and x < 10
+# True
 
->>> x < 0 and x > 3
-False
+x < 0 and x > 3
+# False
 ```
 
 -
@@ -918,13 +914,13 @@ False
 
 Evaluates to True if either or both conditions are true
 
-```none
->>> n = 4
->>> n % 2 == 0 or n % 3 == 0
-True
+```python
+n = 4
+n % 2 == 0 or n % 3 == 0
+# True
 
->>> n % 5 == 0 or n % 3 == 0
-False
+n % 5 == 0 or n % 3 == 0
+# False
 ```
 
 -
@@ -933,13 +929,15 @@ False
 
 Negates a boolean expression.
 
-```none
->>> not True
-False
->>> not False
-True
->>> not (1 > 0) 
-False
+```python
+not True
+# False
+
+not False
+# True
+
+not (1 > 0) 
+# False
 ```
 
 -
@@ -979,12 +977,12 @@ Don't get overwhelmed by the terminology.
 
 ### The if Statement
 
-```none
->>> x = 1
->>> if x > 0:
-...     print("x is positive")
-... 
-x is positive
+```python
+x = 1
+if x > 0:
+    print("x is positive")
+
+# x is positive
 ```
 
 -
@@ -1000,14 +998,14 @@ x is positive
 
 ### The else Clause
 
-```none
->>> x = 7
->>> if x % 2 == 0:
-...     print("x is even")
-... else:
-...     print("x is odd")
-... 
-x is odd
+```python
+x = 7
+if x % 2 == 0:
+    print("x is even")
+else:
+    print("x is odd")
+
+# x is odd
 ```
 
 -
@@ -1020,17 +1018,17 @@ The else clause simply provides an alternative path of execution when the if con
 
 ### The elif Clause
 
-```none
->>> x = 10
->>> y = 5
->>> if x < y:
-...     print("x is less than y")
-... elif x > y:
-...     print("x is greater than y")
-... else:
-...     print("x and y are equal")
-... 
-x is greater than y
+```python
+x = 10
+y = 5
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+else:
+    print("x and y are equal")
+
+# x is greater than y
 ```
 
 -
@@ -1057,19 +1055,19 @@ One condition can be nested within another.
 
 ### Example
 
-```none
->>> x = 10
->>> y = 5
->>> 
->>> if x == y:
-...      print("x and y are equal")
-... else:
-...      if x < y:
-...          print("x is less than y")
-...      else:
-...          print("x is greater than y")
-... 
-x is greater than y
+```python
+x = 10
+y = 5
+
+if x == y:
+     print("x and y are equal")
+else:
+    if x < y:
+        print("x is less than y")
+    else:
+        print("x is greater than y")
+
+# x is greater than y
 ```
 
 -
@@ -1081,24 +1079,25 @@ Logical operators often provide a way to simplify nested conditional statements.
 -
 
 ### Nested Conditional Statement 
-```none
->>> x = 5
->>> if 0 < x:
-...     if x < 10:
-...         print("x is a positive single-digit number.")
-... 
-x is a positive single-digit number.
+
+```python
+x = 5
+if 0 < x:
+    if x < 10:
+        print("x is a positive single-digit number.")
+
+# x is a positive single-digit number.
 ```
 
 -
 
 ### Simplified Using Logical Operator
 
-```none
->>> if 0 < x and x < 10:
-...     print("x is a positive single-digit number.")
-... 
-x is a positive single-digit number.
+```python
+if 0 < x and x < 10:
+    print("x is a positive single-digit number.")
+
+# x is a positive single-digit number.
 ```
 
 -
@@ -1142,10 +1141,10 @@ countdown(10)
 If the programmer fails to specify a base case that does not make a recursive call, the program will end in a runtime error.
 
 ```python
->>> def endless_inception():
-...   endless_inception()
-... 
->>> endless_inception()
+def endless_inception():
+    endless_inception()
+
+endless_inception()
 ```
 
 -
@@ -1168,21 +1167,21 @@ If the programmer fails to specify a base case that does not make a recursive ca
 -
 
 Python 3
-```none
->>> name = input("What is your name?\n")
-What is your name?
+```python
+name = input("What is your name?\n")
+# What is your name?
 Seymour
->>> print(name)
-Seymour
+print(name)
+# Seymour
 ```
 
 Python 2
-```none
->>> want = raw_input("What do you want\n")
-What do you want
+```python
+want = raw_input("What do you want\n")
+# What do you want
 feed me
->>> print(want)
-'feed me'
+print(want)
+# 'feed me'
 ```
 
 -
