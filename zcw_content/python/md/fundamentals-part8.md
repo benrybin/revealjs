@@ -273,4 +273,7 @@ The [pickle module](https://docs.python.org/3/library/pickle.html) can be used t
 -
 -
 
-# BREAK & EXERCISES 
+
+# The End
+
+![Parrot](img/parrot.jpg)
