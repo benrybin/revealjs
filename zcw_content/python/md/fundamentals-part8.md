@@ -175,7 +175,68 @@ This [os module](https://docs.python.org/3/library/os.html) provides a portable 
 
 ### How Does It Work?
 
-```none
+The code below uses the os module to display the current working directory. 
+This is equivalent to the console command 'pwd'.
+
+```python
+import os
+cwd = os.getcwd()
+cwd 
+# '/Users/rd/'
+```
+
+-
+
+### Paths
+
+A **relative path** relates to the location of a file relative to the current working directory.  
+
+An **absolute path** is a path that begins from the root directory of the operating system. Paths that start with a / (from the root directory) are not relative to the current directory.
+
+```python
+import os
+os.path.abspath('README.md')
+# '/Users/rd/Dev/my_awesome_project/README.md'
+```
+
+-
+
+### Verify a file exists.
+
+```python
+import os
+os.path.exists('README.md')
+# True
+```
+
+-
+
+### Verify a path points to a directory.
+
+```python
+import os
+os.path.isdir('/Users/rd')
+# True
+```
+
+-
+
+### Verify a path points to a file.
+
+```python
+import os
+os.path.isfile('/Users/rd')
+# False
+```
+
+-
+
+### List the contents of a directory.
+
+```python
+import os
+os.listdir('/Users/rd')
+# ['Applications', 'Desktop', 'Documents', 'Downloads', '.bash_profile']
 ```
 
 -
