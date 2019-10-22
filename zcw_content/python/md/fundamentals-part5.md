@@ -161,12 +161,12 @@ full_name[7:8]
 
 ### Srings Are Immutable
 
-```none
->>> a = 'top'
->>> a[0] = 'p'
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'str' object does not support item assignment
+```python
+a = 'top'
+a[0] = 'p'
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'str' object does not support item assignment
 ```
 
 -
@@ -242,37 +242,37 @@ nums = [1, 7, 14, 21, 28]
 
 ### Accessing Elements From A List
 
-```none
->>> vowels = ['a', 'e', 'i', 'o', 'u']
->>> vowels[0]
-'a'
+```python
+vowels = ['a', 'e', 'i', 'o', 'u']
+vowels[0]
+# 'a'
 ```
 
 -
 
 ### Accessing Elements From A Nested List
 
-```none
->>> stuff = [1, 'DOG', ['BALL', 'BAT']]
->>> stuff[0]
-1
->>> stuff[2]
-['BALL', 'BAT']
->>> stuff[2][0]
-'BALL'
->>> stuff[2][1]
-'BAT'
+```python
+stuff = [1, 'DOG', ['BALL', 'BAT']]
+stuff[0]
+# 1
+stuff[2]
+# ['BALL', 'BAT']
+stuff[2][0]
+# 'BALL'
+stuff[2][1]
+# 'BAT'
 ```
 
 -
 
 ### Lists Are Mutable
 
-```none
->>> pets = ['DOG', 'CAT', 'BIRD']
->>> pets[1] = 'TURTLE'
->>> pets
-['DOG', 'TURTLE', 'BIRD']
+```python
+pets = ['DOG', 'CAT', 'BIRD']
+pets[1] = 'TURTLE'
+print(pets)
+# ['DOG', 'TURTLE', 'BIRD']
 ```
 
 -
@@ -285,15 +285,15 @@ nums = [1, 7, 14, 21, 28]
 
 ### Traversing A List
 
-```none
->>> people = ['Joe', 'Jessica', 'James', 'Jennifer']
->>> for person in people:
-...     print(person)
-... 
-Joe
-Jessica
-James
-Jennifer
+```python
+people = ['Joe', 'Jessica', 'James', 'Jennifer']
+for person in people:
+    print(person)
+
+# Joe
+# Jessica
+# James
+# Jennifer
 ```
 
 -
@@ -311,37 +311,37 @@ Jennifer
 
 ### List Concatenation 
 
-```none
->>> parts_a = ['wheels', 'handlebar', 'tank']
->>> parts_b = ['frame', 'chain', 'engine']
->>> parts_c = parts_a + parts_b
->>> parts_c
-['wheels', 'handlebar', 'tank', 'frame', 'chain', 'engine']
+```python
+parts_a = ['wheels', 'handlebar', 'tank']
+parts_b = ['frame', 'chain', 'engine']
+parts_c = parts_a + parts_b
+print(parts_c)
+# ['wheels', 'handlebar', 'tank', 'frame', 'chain', 'engine']
 ```
 
 -
 
 ### List Repetition
 
-```none
->>> noise = ['Honk']
->>> noise * 3
-['Honk', 'Honk', 'Honk']
+```python
+noise = ['Honk']
+noise * 3
+# ['Honk', 'Honk', 'Honk']
 
->>> percolate = ["It's", "Time", "For", "The", "Percolator"]
->>> percolate * 3
-["It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator']
+percolate = ["It's", "Time", "For", "The", "Percolator"]
+percolate * 3
+# ["It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator', "It's", 'Time', 'For', 'The', 'Percolator']
 ```
 -
 
 ### Membership Operators
 
-```none
->>> marvel_heroes = ['Ironman', 'Thor', 'Black Panther', 'Black Widow']
->>> 'Batman' in marvel_heroes
-False
->>> 'Batman' not in marvel_heroes
-True
+```python
+marvel_heroes = ['Ironman', 'Thor', 'Black Panther', 'Black Widow']
+'Batman' in marvel_heroes
+# False
+'Batman' not in marvel_heroes
+# True
 ```
 
 -
@@ -350,25 +350,25 @@ True
 
 A slice is a segment of a sequence. 
 
-```none
->>> colors = ['r', 'o', 'y', 'g', 'b', 'i', 'v']
->>> first_three = colors[:3]
->>> print(first_three)
-['r', 'o', 'y']
->>> last_four = colors[3:7]
->>> print(last_four)
-['g', 'b', 'i', 'v']
+```python
+colors = ['r', 'o', 'y', 'g', 'b', 'i', 'v']
+first_three = colors[:3]
+print(first_three)
+# ['r', 'o', 'y']
+last_four = colors[3:7]
+print(last_four)
+# ['g', 'b', 'i', 'v']
 ```
 
 -
 
 ### Assignment With Slices
 
-```none
->>> values = [1, 2, 3, 4, 5, 6]
->>> values[1:4] = ['a', 'b', 'c']
->>> values
-[1, 'a', 'b', 'c', 5, 6]
+```python
+values = [1, 2, 3, 4, 5, 6]
+values[1:4] = ['a', 'b', 'c']
+print(values)
+# [1, 'a', 'b', 'c', 5, 6]
 
 ```
 
@@ -384,13 +384,13 @@ A slice is a segment of a sequence.
 
 Add new element to the end of a list.
 
-```none
->>> letters = ['a', 'b', 'c']
->>> letters
-['a', 'b', 'c']
->>> letters.append('d')
->>> letters
-['a', 'b', 'c', 'd']
+```python
+letters = ['a', 'b', 'c']
+letters
+# ['a', 'b', 'c']
+letters.append('d')
+print(letters)
+# ['a', 'b', 'c', 'd']
 ```
 
 -
@@ -399,14 +399,14 @@ Add new element to the end of a list.
 
 Append all elements of a list argument to another list
 
-```none
->>> t1 = ['a', 'b', 'c']
->>> t2 = ['d', 'e']
->>> t1.extend(t2)
->>> t1
-['a', 'b', 'c', 'd', 'e']
->>> t2
-['d', 'e']
+```python
+t1 = ['a', 'b', 'c']
+t2 = ['d', 'e']
+t1.extend(t2)
+print(t1_
+# ['a', 'b', 'c', 'd', 'e']
+print(t2)
+# ['d', 'e']
 ```
 
 -
@@ -415,22 +415,22 @@ Append all elements of a list argument to another list
 
 Add up elements of a list.
 
-```none
->>> grades = [60, 70, 90]
->>> average = sum(grades) / len(grades)
->>> print(average)
-73.33333333333333
+```python
+grades = [60, 70, 90]
+average = sum(grades) / len(grades)
+print(average)
+# 73.33333333333333
 ```
 
 -
 
 ### List methods - list
 
-```none
->>> make = 'Yamaha'
->>> make_items = list(make)
->>> print(make_items)
-['Y', 'a', 'm', 'a', 'h', 'a']
+```python
+make = 'Yamaha'
+make_items = list(make)
+print(make_items)
+# ['Y', 'a', 'm', 'a', 'h', 'a']
 ```
 
 -
@@ -449,20 +449,20 @@ Uses an index to remove an element from the list.
 Returns the removed element.  
 If no index is provided, it will default to the last element.
 
-```none
->>> nums = [1, 2, 3]
->>> print(nums)
-[1, 2, 3]
->>> x = nums.pop(2)
->>> print(x)
-3
->>> print(nums)
-[1, 2]
->>> y = nums.pop()
->>> print(y)
-2
->>> print(nums)
-[1]
+```python
+nums = [1, 2, 3]
+print(nums)
+# [1, 2, 3]
+x = nums.pop(2)
+print(x)
+# 3
+print(nums)
+# [1, 2]
+y = nums.pop()
+print(y)
+# 2
+print(nums)
+# [1]
 ```
 
 -
@@ -471,11 +471,11 @@ If no index is provided, it will default to the last element.
 
 Same as pop but does not return the removed value.
 
-```none
->>> nums = [1, 2, 3]
->>> del nums[2]
->>> print(nums)
-[1, 2]
+```python
+nums = [1, 2, 3]
+del nums[2]
+print(nums)
+# [1, 2]
 ```
 -
 
@@ -484,13 +484,13 @@ Same as pop but does not return the removed value.
 Remove an item by the value rather than by index.
 Returns None.
 
-```none
->>> fruits = ['apples', 'bananas', 'peaches']
->>> val = fruits.remove('bananas')
->>> print(val)
-None
->>> print(fruits)
-['apples', 'peaches']
+```python
+fruits = ['apples', 'bananas', 'peaches']
+val = fruits.remove('bananas')
+print(val)
+#None
+print(fruits)
+# s['apples', 'peaches']
 ```
 
 -
