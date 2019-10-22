@@ -21,12 +21,12 @@ Common uses include:
 
 ### Creating A Set - Using Curly Braces
 
-```none
->>> my_set = {1, 2, 3, 4}
->>> print(my_set)
-{1, 2, 3, 4}
->>> type(my_set)
-<class 'set'>
+```python
+my_set = {1, 2, 3, 4}
+print(my_set)
+# {1, 2, 3, 4}
+type(my_set)
+# <class 'set'>
 ```
 
 -
@@ -36,13 +36,13 @@ Common uses include:
 * The built-in set function takes any sequence as its argument.
 * Items in a set are not ordered.
 
-```none
->>> my_other_set = set(['a', 'a', 'b', 'c'])
->>> print(my_other_set)
-{'b', 'a', 'c'}
->>> yet_another_set = set()
->>> print(yet_another_set)
-set()
+```python
+my_other_set = set(['a', 'a', 'b', 'c'])
+print(my_other_set)
+# {'b', 'a', 'c'}
+yet_another_set = set()
+print(yet_another_set)
+# set()
 ```
 
 -
@@ -51,10 +51,10 @@ set()
 
 Use the in keyword as with other types to determine membership.
 
-```none
->>> zoo_animals = set(['lion', 'elephant', 'rhino'])
->>> 'pigeon' in zoo_animals
-False
+```python
+zoo_animals = set(['lion', 'elephant', 'rhino'])
+'pigeon' in zoo_animals
+# False
 ```
 
 -
@@ -69,7 +69,15 @@ False
 
 If the item being added already exists, nothing happens. Otherwise the new item is added.
 
-```none
+```python
+abcs = {'a', 'b', 'c'}
+abcs.add('d')
+print(abcs)
+# {'a', 'b', 'c', 'd'}
+ 
+abcs.add('a')
+print(abcs)
+# {'a', 'b', 'c', 'd'}
 ```
 
 -
@@ -78,12 +86,12 @@ If the item being added already exists, nothing happens. Otherwise the new item 
 
 Adds the contents of a new dictionary 
 
-```none
->>> set_1 = {1, 2, 3}
->>> set_2 = set()
->>> set_2.update(set_1)
->>> set_2
-{1, 2, 3}
+```python
+set_1 = {1, 2, 3}
+set_2 = set()
+set_2.update(set_1)
+set_2
+# {1, 2, 3}
 ```
 
 -
@@ -92,7 +100,16 @@ Adds the contents of a new dictionary
 
 Removes an item from the set. If the item isn't present in the set, it raises a KeyError.
 
-```none
+```python
+abcs = {'a', 'b', 'c'}
+abcs.remove('a')
+print(abcs)
+# {'b', 'c'}
+
+abcs.remove('z')
+# Traceback (most recent call last):
+#  File "<stdin>", line 1, in <module>
+# KeyError: 'z'
 ```
 
 -
@@ -101,7 +118,9 @@ Removes an item from the set. If the item isn't present in the set, it raises a 
 
 Just like remove but does not raise exception.
 
-```none
+```python
+abcs = {'a', 'b', 'c'}
+abcs.discard('z')
 ```
 
 -
@@ -110,7 +129,19 @@ Just like remove but does not raise exception.
 
 Arbitrarily removes and returns an item from the set.
 
-```none
+```python
+abcs = {'a', 'b', 'c'}
+
+removed_item = abcs.pop()
+print(removed_item)
+# a 
+
+removed_item = abcs.pop()
+print(removed_item)
+# b
+
+print(abcs)
+# {'c'}
 ```
 
 -
@@ -119,7 +150,11 @@ Arbitrarily removes and returns an item from the set.
 
 Removes all items in one shot.
 
-```none
+```python
+abcs = {'a', 'b', 'c'}
+abcs.clear()
+print(abcs)
+# set()
 ```
 
 -
