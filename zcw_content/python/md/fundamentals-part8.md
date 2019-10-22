@@ -1,165 +1,3 @@
-# Sets 
-## Part 1
-
--
-
-### What is it? 
-
-A [set](https://docs.python.org/3/library/stdtypes.html#set) works much like a list but without allowing any duplicates.
-
--
-
-### Why 
-
-Common uses include:
-
-* membership testing
-* removing duplicates from a sequence
-* computing mathematical operations such as intersection, union, difference, and symmetric difference
-
--
-
-### Creating A Set - Using Curly Braces
-
-```python
-my_set = {1, 2, 3, 4}
-print(my_set)
-# {1, 2, 3, 4}
-type(my_set)
-# <class 'set'>
-```
-
--
-
-### Creating A Set - Using Built-in Function
-
-* The built-in set function takes any sequence as its argument.
-* Items in a set are not ordered.
-
-```python
-my_other_set = set(['a', 'a', 'b', 'c'])
-print(my_other_set)
-# {'b', 'a', 'c'}
-yet_another_set = set()
-print(yet_another_set)
-# set()
-```
-
--
-
-### Membership Testing
-
-Use the in keyword as with other types to determine membership.
-
-```python
-zoo_animals = set(['lion', 'elephant', 'rhino'])
-'pigeon' in zoo_animals
-# False
-```
-
--
--
-
-# Sets 
-## Part 2
-
--
-
-### add
-
-If the item being added already exists, nothing happens. Otherwise the new item is added.
-
-```python
-abcs = {'a', 'b', 'c'}
-abcs.add('d')
-print(abcs)
-# {'a', 'b', 'c', 'd'}
- 
-abcs.add('a')
-print(abcs)
-# {'a', 'b', 'c', 'd'}
-```
-
--
-
-### update
-
-Adds the contents of a new dictionary 
-
-```python
-set_1 = {1, 2, 3}
-set_2 = set()
-set_2.update(set_1)
-set_2
-# {1, 2, 3}
-```
-
--
-
-### remove 
-
-Removes an item from the set. If the item isn't present in the set, it raises a KeyError.
-
-```python
-abcs = {'a', 'b', 'c'}
-abcs.remove('a')
-print(abcs)
-# {'b', 'c'}
-
-abcs.remove('z')
-# Traceback (most recent call last):
-#  File "<stdin>", line 1, in <module>
-# KeyError: 'z'
-```
-
--
-
-### discard
-
-Just like remove but does not raise exception.
-
-```python
-abcs = {'a', 'b', 'c'}
-abcs.discard('z')
-```
-
--
-
-### pop
-
-Arbitrarily removes and returns an item from the set.
-
-```python
-abcs = {'a', 'b', 'c'}
-
-removed_item = abcs.pop()
-print(removed_item)
-# a 
-
-removed_item = abcs.pop()
-print(removed_item)
-# b
-
-print(abcs)
-# {'c'}
-```
-
--
-
-### clear
-
-Removes all items in one shot.
-
-```python
-abcs = {'a', 'b', 'c'}
-abcs.clear()
-print(abcs)
-# set()
-```
-
--
--
-
 # Persistence
 ## Files
 
@@ -196,6 +34,7 @@ Hello file
 | t         | text mode (default)                                             | 
 | +         | open a disk file for updating (reading and writing)             |
 
+-
 -
 
 ### os Module
@@ -285,12 +124,11 @@ os.listdir('/Users/rd')
 
 Exceptions are a means of breaking out of the normal flow of control of a code block in order to handle errors or other exceptional conditions.
 
-```none
->>> fin = open('i_like_turtles.py', 'r')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-FileNotFoundError: [Errno 2] No such file or directory: 'i_like_turtles.py'
-
+```python
+fin = open('i_like_turtles.py', 'r')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# FileNotFoundError: [Errno 2] No such file or directory: 'i_like_turtles.py'
 ```
 
 -
@@ -299,14 +137,13 @@ FileNotFoundError: [Errno 2] No such file or directory: 'i_like_turtles.py'
 
 The [try](https://docs.python.org/3/reference/compound_stmts.html#try) statement specifies exception handlers and/or cleanup code for a group of statements.  
 
-```none
->>> try:
-...     fin = open('i_like_turtles.py', 'r')
-... except FileNotFoundError:
-...     print('The file does not exist!')
-... 
-The file does not exist!
+```python
+try:
+    fin = open('i_like_turtles.py', 'r')
+except FileNotFoundError:
+    print('The file does not exist!')
 
+# The file does not exist!
 ```
 
 -
@@ -315,13 +152,13 @@ The file does not exist!
 
 The except clause(s) specifies one or more exception handlers. When no exception occurs in the try clause, no exception handler is executed.
 
-```none
->>> try:
-...    print(100 / 10)
-... except ZeroDivisionError:
-...    print("Division by zero is not allowed.")
-... 
-10.0
+```python
+try:
+    print(100 / 10)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+
+# 10.0
 ```
 
 -
@@ -330,7 +167,8 @@ The except clause(s) specifies one or more exception handlers. When no exception
 
 A way to specify a block of code should be run only if no exceptions were raised at all,
 
-```none
+```python
+TODO
 ```
 
 -
@@ -339,7 +177,8 @@ A way to specify a block of code should be run only if no exceptions were raised
 
 If finally is present, it specifies a ‘cleanup’ handler.
 
-```none
+```python
+TODO
 ```
 
 -
