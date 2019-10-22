@@ -1,4 +1,4 @@
-### os Module
+# os Module
 
 -
 
@@ -203,6 +203,7 @@ for line in fin:
     print(line)
 
 # Hello file
+fout.close()
 ```
 
 -
@@ -222,15 +223,42 @@ for line in fin:
 -
 -
 
-### The with Statement
+# The with Statement
 
 The [with](https://docs.python.org/3/reference/compound_stmts.html#with) statement is used to wrap the execution of a block with methods defined by a context manager.
+
+The context manager will automatically close the file handler when you are done with it.
 
 -
 
 ### Opening Files Using With Statement
 
-TODO 
+```python
+with open('new_file', 'r') as file_handler:
+    for line in file_handler:
+        print(line)
+
+```
+
+-
+-
+
+# Putting It Together
+
+```python
+import os
+
+def read_file(file_name):
+    with open(file_name, 'r') as file_handler:
+        for line in file_handler:
+            print(line)
+
+file_name = "new_file.txt"
+if os.path.exists(file_name) and os.path.isfile(file_name):
+    read_file(file_name)
+else:
+    print("invalid file path")
+```
 
 -
 -
