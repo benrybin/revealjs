@@ -55,7 +55,6 @@ print(best_ice_cream)
 
 -
 
-
 ### Function Name Rules
 
 The rules for function names are the same as for variable names.

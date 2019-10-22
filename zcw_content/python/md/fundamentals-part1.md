@@ -34,7 +34,7 @@
 
 -
 
-# The Zen Of Python
+### The Zen Of Python
 
 ```none
 >>> import this
@@ -67,7 +67,7 @@ Namespaces are one honking great idea -- let's do more of those!
 -
 -
 
-### Hello, World!
+# Hello, World!
 
 ![Show me the code](img/show-me-the-code.jpg)
 
@@ -533,13 +533,10 @@ beats_per_second = 43
 [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/#comments)  
 [PEP 257 Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
 
--
-
-
-![That is all](img/comments-that-is-all.png)
 
 -
 -
+
 
 # The End
 
