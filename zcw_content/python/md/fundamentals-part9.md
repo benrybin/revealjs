@@ -1,3 +1,21 @@
+# Persistence
+## Database
+
+-
+
+### dbm Module
+
+The [dbm module](https://docs.python.org/3/library/dbm.html) provides an interface for creating adn updating database files.
+
+-
+
+### Pickling
+
+The [pickle module](https://docs.python.org/3/library/pickle.html) can be used to serialize and de-serialize a Python object.
+
+-
+-
+
 # Writing Modules
 
 -

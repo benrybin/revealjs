@@ -1,42 +1,3 @@
-# Persistence
-## Files
-
--
-
-### The open Built-in Function
-
-Use the [open](https://docs.python.org/3/library/functions.html#open) built-in function to acquire a file object.
-
-```none
->>> fout = open('new_file', 'w')
->>> fout.write("Hello file\n")
-11
->>> fout.close()
->>> fin = open('new_file', 'r')
->>> for line in fin:
-...     print(line)
-... 
-Hello file
-
-```
-
--
-
-### Available Modes
-
-| character | Meaning                                                         |
-| --------- | --------------------------------------------------------------- |
-| r         | open for reading (default)                                      |
-| w         | open for writing, truncating the file first                     |
-| x         | open for exclusive creation, failing if the file already exists |
-| a         | open for writing, appending to the end of the file if it exists |
-| b         | binary mode                                                     |
-| t         | text mode (default)                                             | 
-| +         | open a disk file for updating (reading and writing)             |
-
--
--
-
 ### os Module
 
 -
@@ -168,7 +129,26 @@ except ZeroDivisionError:
 A way to specify a block of code should be run only if no exceptions were raised at all,
 
 ```python
-TODO
+try:
+    print(100 / 10)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+else:
+    print("No issues were encountered.")
+
+# 10.0
+# No issues were encountered.
+```
+
+```python
+try:
+    print(100 / 0)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+else:
+    print("No issues were encountered.")
+
+# Division by zero is not allowed.
 ```
 
 -
@@ -178,9 +158,68 @@ TODO
 If finally is present, it specifies a ‘cleanup’ handler.
 
 ```python
-TODO
+try:
+    print(100 / 10)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+finally:
+    print("This runs no matter what happened.")
+
+# 10.0
+# This runs no matter what happened.
 ```
 
+```python
+try:
+    print(100 / 0)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+finally:
+    print("This runs no matter what happened.")
+
+# Division by zero is not allowed.
+# This runs no matter what happened.
+```
+
+-
+-
+
+# Persistence
+## Files
+
+-
+
+### The open Built-in Function
+
+Use the [open](https://docs.python.org/3/library/functions.html#open) built-in function to acquire a file object.
+
+```python
+fout = open('new_file', 'w')
+fout.write("Hello file\n")
+# 11
+fout.close()
+fin = open('new_file', 'r')
+for line in fin:
+    print(line)
+
+# Hello file
+```
+
+-
+
+### Available Modes
+
+| character | Meaning                                                         |
+| --------- | --------------------------------------------------------------- |
+| r         | open for reading (default)                                      |
+| w         | open for writing, truncating the file first                     |
+| x         | open for exclusive creation, failing if the file already exists |
+| a         | open for writing, appending to the end of the file if it exists |
+| b         | binary mode                                                     |
+| t         | text mode (default)                                             | 
+| +         | open a disk file for updating (reading and writing)             |
+
+-
 -
 
 ### The with Statement
@@ -188,26 +227,13 @@ TODO
 The [with](https://docs.python.org/3/reference/compound_stmts.html#with) statement is used to wrap the execution of a block with methods defined by a context manager.
 
 -
--
 
-# Persistence
-## Database
+### Opening Files Using With Statement
 
--
-
-### dbm Module
-
-The [dbm module](https://docs.python.org/3/library/dbm.html) provides an interface for creating adn updating database files.
-
--
-
-### Pickling
-
-The [pickle module](https://docs.python.org/3/library/pickle.html) can be used to serialize and de-serialize a Python object.
+TODO 
 
 -
 -
-
 
 # The End
 
