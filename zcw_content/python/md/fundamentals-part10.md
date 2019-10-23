@@ -28,6 +28,7 @@ my_car = Car()
 print(my_car)
 # <__main__.Car object at 0x10cb08b38>
 ```
+
 The object *my_car* is an instance of the *Car* class.  
 
 -
@@ -91,6 +92,52 @@ print_car_details(my_car)
 
 -
 
+### Methods 
+
+A method is a function that “belongs to” an object.  
+
+```python
+class AnnoyingSinger:
+
+    def sing(self):
+        print("Baby shark, do do, do do do do")
+
+pink_fong = AnnoyingSinger()
+pink_fong.sing()
+# Baby shark, do do, do do do do
+```
+
+-
+
+### The __init__() Method
+
+This method is invoked anytime an object is initialized.
+
+```python
+class AnnoyingSinger:
+    def __init__(self, song):
+        self.song = song
+
+    def sing(self):
+        print(song)
+
+pink_fong = AnnoyingSinger("Baby shark, do do, do do do do")
+pink_fong.sing()
+# Baby shark, do do, do do do do
+
+frozen = AnnoyingSinger("Let it go, let it go")
+frozen.sing()
+# Let it go, let it go
+```
+
+-
+-
+
+# Classes & Objects 
+## Part 3
+
+-
+
 ### Embedded Objects
 
 An object that is an attribute of another object is embedded.
@@ -99,10 +146,23 @@ An object that is an attribute of another object is embedded.
 
 -
 
-### Embedded Objects Continued 
+### Embedded Object Example 
 
 ```python
+class Heart:
 
+    def beat(self):
+        print("ba-dum ba-dum ba-dum")
+
+class Person:
+
+    def __init__(self):
+        self.heart = Heart()
+
+
+john = Person()
+john.heart.beat()
+# ba-dum ba-dum
 ```
 
 -
