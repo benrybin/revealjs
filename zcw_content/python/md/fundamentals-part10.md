@@ -186,6 +186,14 @@ john.heart.beat()
 -
 -
 
+### Classes 
+
+[Classes Docs](https://docs.python.org/3.8/tutorial/classes.html?highlight=classes#)
+
+![Moar](img/classes-moar.jpg)
+
+-
+
 
 # The End
 
