@@ -98,7 +98,6 @@ A method is a function that “belongs to” an object.
 
 ```python
 class AnnoyingSinger:
-
     def sing(self):
         print("Baby shark, do do, do do do do")
 
@@ -131,6 +130,27 @@ frozen.sing()
 ```
 
 -
+
+### The __str__() Method
+
+A special method that returns the string representation of a method.
+
+```python
+class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def __str__(self:
+        return f"{self.name} identifies as {self.gender} and is {self.age} years old."
+
+john = Person("John", 25, male)
+print(john)
+# John identifies as male and is 25 years old.
+```
+
+-
 -
 
 # Classes & Objects 
@@ -150,12 +170,10 @@ An object that is an attribute of another object is embedded.
 
 ```python
 class Heart:
-
     def beat(self):
         print("ba-dum ba-dum ba-dum")
 
 class Person:
-
     def __init__(self):
         self.heart = Heart()
 
