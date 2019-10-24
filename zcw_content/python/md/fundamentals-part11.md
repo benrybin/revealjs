@@ -12,7 +12,6 @@ Inheritance is the ability to define a new class that is a modified version of a
 
 ```python
 class Humanoid:
-
     def walk(self):
         print("walking")
     
@@ -20,7 +19,6 @@ class Humanoid:
         print("running")
 
 class Human(Humanoid):
-
     def ride_bicycle(self):
         print("riding bicycle")
     
@@ -28,13 +26,12 @@ class Human(Humanoid):
         print("moon walking.")
 
 class Siren:
-
     def sing(self):
         print("singing song to lure in sailors")
-)
 
 ```
 
+-
 -
 
 
