@@ -78,6 +78,7 @@ os.listdir('/Users/rd')
 -
 
 # Exceptions
+## Part 1
 
 -
 
@@ -179,6 +180,71 @@ finally:
 
 # Division by zero is not allowed.
 # This runs no matter what happened.
+```
+
+-
+-
+
+# Exceptions
+## Part 2
+
+-
+
+### Catching Multiple Exceptions With A Base Class
+
+```python
+try:
+    ...
+except BaseClassError:
+    ...
+```
+
+-
+
+### Catching Multiple Exceptions
+
+
+```python
+try:
+    ...
+except (Exception1, Exception2):
+    ...
+```
+
+-
+
+### Accessing The Exception Object
+
+```python
+
+import logging
+
+try:
+    ...
+except Exception1 as e:
+    logging.error(e)
+except (Exception2, Exception3) as e:
+    logging.error(e)
+```
+
+-
+
+### raise Keyword
+
+```python
+if(condition):
+    raise Exception('Something went wrong')
+```
+
+-
+
+### Exception Chains
+
+```python
+try:
+    ...
+except Exception as e:
+    raise Exception2('Something went wrong')
 ```
 
 -
