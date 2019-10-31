@@ -478,6 +478,35 @@ sorted_customers
 
 -
 
+### Lambdas Revisited
+
+From the [docs](https://docs.python.org/3/howto/sorting.html#key-functions)...
+
+Both list.sort() and sorted() have a key parameter to specify a function to be called on each list element prior to making comparisons.
+
+```python
+student_tuples = [
+    ('john', 'A', 15),
+    ('jane', 'B', 12),
+    ('dave', 'B', 10)
+]
+
+student_tuples
+# [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]
+
+student_tuples.sort(key=lambda student: student[2])
+student_tuples
+# [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
+```
+
+-
+-
+
+# Lists 
+## Part 4
+
+-
+
 ### Deleting Elements
 
 * pop
