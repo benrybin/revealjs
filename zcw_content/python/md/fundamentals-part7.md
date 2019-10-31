@@ -16,7 +16,7 @@ Dictionaries are indexed by keys of any immutable type.
 empty_dict = {}
 another_empty_dict = dict()
 phone_numbers = {'mom': '302-123-4567', 'dad': '302-123-4567', 'my_boy_blue': '302-654-9876'}
-items_to_prices = {'milk', '4.5', 'bread': '2.55', 'beef': '7.50'}
+items_to_prices = {'milk': '4.5', 'bread': '2.55', 'beef': '7.50'}
 ```
 
 -
