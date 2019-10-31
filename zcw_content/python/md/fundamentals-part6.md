@@ -143,6 +143,21 @@ sides[0] = 'z'
 ```
 
 -
+
+### Mutable Objects Inside Of Tuples
+
+If an object inside of a tuple is mutable, you can modify it in place
+
+```python
+my_tuple = (['a', 'b', 'c'], 'roberto', (1, 2, 3))
+my_tuple[0]
+# ['a', 'b', 'c']
+ my_tuple[0].append('d')
+my_tuple[0]
+(['a', 'b', 'c', 'd'], 'roberto', (1, 2, 3))
+```
+
+-
 -
 
 # Tuples
