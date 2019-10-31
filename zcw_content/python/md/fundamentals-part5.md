@@ -242,6 +242,8 @@ nums = [1, 7, 14, 21, 28]
 
 ### Accessing Elements From A List
 
+Elements can be accessed with square brackets []. Sequences are 0-indexed.
+
 ```python
 vowels = ['a', 'e', 'i', 'o', 'u']
 vowels[0]
