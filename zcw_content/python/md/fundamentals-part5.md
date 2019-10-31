@@ -397,6 +397,22 @@ print(letters)
 
 -
 
+### List Methods - insert 
+
+Add a new element to a specific location.  
+This operation is computationally expensive and should be avoided.
+
+```python
+letters = ['a', 'b', 'c']
+letters
+# ['a', 'b', 'c']
+letters.insert(2, 'what am i even doing with these letters?')
+letters
+# ['a', 'b', 'what am i even doing with these letters?', 'c']
+```
+
+-
+
 ### List Methods - extend
 
 Append all elements of a list argument to another list
