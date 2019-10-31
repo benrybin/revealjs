@@ -99,6 +99,22 @@ print(t1)
 
 -
 
+### Nested Tuples
+
+Tuples can be nested. In other words, it is possible to create a tuple of tuples.
+
+```python
+nested_tuple = (1, 2, 3), (4, 5)
+nested_tuple
+# ((1, 2, 3), (4, 5))
+nested_tuple[0]
+# (1, 2, 3)
+nested_tuple[1]
+# (4, 5)
+```
+
+-
+
 ### Tuples Are Immutable
 
 ```python
