@@ -39,7 +39,6 @@ value = true-expr if condition else false-expr
 ```python
 def conditional_statement(value: bool) -> bool:
     return True if value == True else False
-
 ```
 
 -
@@ -65,14 +64,14 @@ Don't automatically assume that concise is always better. In some cases, it may 
 
 Suppose you want to generate a list with only items that meet a certain criteria.
 
-```none
->>> output = []
->>> for value in range(10):
-...     if value > 5:
-...         output.append(str(value))
-... 
->>> output
-['6', '7', '8', '9']
+```python
+output = []
+for value in range(10):
+    if value > 5:
+        output.append(str(value))
+
+output
+# ['6', '7', '8', '9']
 ```
 
 -
@@ -82,12 +81,12 @@ Suppose you want to generate a list with only items that meet a certain criteria
 The same code can be simplified with list comprehensions.
 
 The syntax takes the following format:  
-[expr for val in collection if condition]
+list_comp = [expr for value in collection if condition]
 
-```none
->>> ouput = [str(value) for value in range(10) if value > 5]
->>> output
-['6', '7', '8', '9']
+```python
+ouput = [str(value) for value in range(10) if value > 5]
+output
+# ['6', '7', '8', '9']
 ```
 
 -
@@ -97,6 +96,44 @@ The syntax takes the following format:
 * Expression for final value
 * for clause (iteration)
 * if clause (conditional to determine which items should be included)
+
+-
+-
+
+# Dictionary Comprehensions
+
+-
+
+### How
+
+The syntax takes the following format:  
+dict_comp = {key-expr : value-expr for value in collection if condition}
+
+```python
+people = ['Chris', 'Dolio', 'Froilan', 'Kris', 'Roberto']
+dict_comp = {person : person.upper() for person in people if len(person) > 4}
+dict_comp
+{'Chris': 'CHRIS', 'Dolio': 'DOLIO', 'Froilan': 'FROILAN', 'Roberto': 'ROBERTO'}
+```
+
+-
+-
+
+# Set Comprehensions
+
+-
+
+### How
+
+The syntax takes the following format:  
+set_comp = {expr for value in collection if condition}
+
+```python
+nums = [1, 2, 3, 4, 5]
+odds_squared = {num ** 2 for num in nums if num % 2 != 0}
+odds_squared
+# {1, 9, 25}
+```
 
 -
 -
