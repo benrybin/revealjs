@@ -453,6 +453,17 @@ print(make_items)
 
 -
 
+### List methods - sort 
+
+```python
+customer_age = [53, 18, 35, 33, 20, 30]
+customer_age.sort()
+customer_age
+# [18, 20, 30, 33, 35, 53]
+```
+
+-
+
 ### Deleting Elements
 
 * pop
