@@ -188,6 +188,35 @@ print(result)
 -
 -
 
+# Functions
+## Part 3
+
+-
+
+### Anonymous (Lambda) Functions
+
+Lambda expressions are used to create anonymous functions.
+
+The syntax is as follows:
+lambda parameters: expression
+
+```python
+def double(x):
+    return x * 2
+
+double(5)
+# 10
+```
+
+```python
+double_anon = lambda x: x * 2
+double_anon(5)
+# 10
+```
+
+-
+
+
 
 # The End
 
