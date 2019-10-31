@@ -63,6 +63,8 @@ type(t2)
 
 ### tuple Function
 
+Any sequence or iterator can be converted into a tuple by invoking the tuple function. 
+
 ```python
 t3 = tuple(['king', 'queen', 'bishop', 'knight', 'rook', 'pawn'])
 print(t3)
@@ -70,8 +72,6 @@ print(t3)
 type(t3)
 # <class 'tuple'>
 ```
-
-If the argument is a sequence, the result is a tuple with the elements of the sequence:
 
 ```python
 name_tuple = tuple("Roberto")
