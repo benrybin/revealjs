@@ -276,6 +276,27 @@ print(sum(*t))
 -
 -
 
+# Tuples
+## Part 3
+
+-
+
+### Tuple Methods - count
+
+```python
+name = tuple('roberto')
+name.count('o')
+# 2
+
+customer_age = (18, 18, 19, 21, 21, 25, 30, 55)
+customer_age.count(18)
+# 2
+```
+
+-
+-
+
+
 # zip Built-in Function
 
 -
