@@ -455,10 +455,24 @@ print(make_items)
 
 ### List methods - sort 
 
+The sort method will modify the list so that the items are sorted.
+
 ```python
 customer_age = [53, 18, 35, 33, 20, 30]
 customer_age.sort()
 customer_age
+# [18, 20, 30, 33, 35, 53]
+```
+
+The sorted built in function will return a new sorted list without modifying the existing list.
+```python
+customer_age = [53, 18, 35, 33, 20, 30]
+sorted_customers = sorted(customer_age)
+
+customer_age
+# [53, 18, 35, 33, 20, 30]
+
+sorted_customers
 # [18, 20, 30, 33, 35, 53]
 ```
 
