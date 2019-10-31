@@ -176,6 +176,21 @@ fruits + vegetables
 
 -
 
+### Unpacking Tuples
+
+```python
+nums_tup = (1, 2, 3)
+a, b, c = nums_tup
+a
+# 1
+b 
+# 2
+c 
+# 3
+```
+
+-
+
 ### Tuple Assignment
 
 Suppose you needed to swap the values of variables a and b. A conventional solution would involve assigning one of the values to a temporary variable.
