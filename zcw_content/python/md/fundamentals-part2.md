@@ -195,11 +195,13 @@ print(result)
 
 ### Anonymous (Lambda) Functions
 
-Lambda expressions are used to create anonymous functions.
+[Lambda](https://docs.python.org/3/reference/expressions.html#lambda) expressions are used to create anonymous functions.
 
-The syntax is as follows:
-lambda parameters: expression
+-
 
+### Lambdas Continued
+
+Suppose you have a single statement function that doubles a given number.
 ```python
 def double(x):
     return x * 2
@@ -208,6 +210,9 @@ double(5)
 # 10
 ```
 
+The above function can be simplified as a lambda with the following syntax:  
+lambda parameters: expression
+
 ```python
 double_anon = lambda x: x * 2
 double_anon(5)
@@ -215,7 +220,7 @@ double_anon(5)
 ```
 
 -
-
+-
 
 
 # The End
