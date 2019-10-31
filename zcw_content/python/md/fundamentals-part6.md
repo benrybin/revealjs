@@ -107,10 +107,27 @@ Tuples can be nested. In other words, it is possible to create a tuple of tuples
 nested_tuple = (1, 2, 3), (4, 5)
 nested_tuple
 # ((1, 2, 3), (4, 5))
-nested_tuple[0]
-# (1, 2, 3)
+```
+
+-
+
+### Accessing Elements From A Tuple
+
+Elements can be accessed with square brackets []. Sequences are 0-indexed.
+
+```python
+regular_tuple = (1, 2, 3)
+regular_tuple[0]
+# 1
+```
+
+```python
+nested_tuple = (1, 2, 3), (4, 5)
 nested_tuple[1]
 # (4, 5)
+
+nested_tuple[1][0]
+# 4
 ```
 
 -
