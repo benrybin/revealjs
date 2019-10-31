@@ -81,6 +81,9 @@ Suppose you want to generate a list with only items that meet a certain criteria
 
 The same code can be simplified with list comprehensions.
 
+The syntax takes the following format:  
+[expr for val in collection if condition]
+
 ```none
 >>> ouput = [str(value) for value in range(10) if value > 5]
 >>> output
