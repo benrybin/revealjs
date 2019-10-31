@@ -165,6 +165,17 @@ my_tuple[0]
 
 -
 
+### Tuple Concatenation 
+
+```python
+fruits = ('apples', 'bananas')
+vegetables = ('green beans', 'broccoli')
+fruits + vegetables
+# ('apples', 'bananas', 'green beans', 'broccoli')
+```
+
+-
+
 ### Tuple Assignment
 
 Suppose you needed to swap the values of variables a and b. A conventional solution would involve assigning one of the values to a temporary variable.
