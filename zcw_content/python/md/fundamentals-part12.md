@@ -33,6 +33,9 @@ coditional_statemnt(False)
 
 Conditional expressions can be used to express conditional logic more consisely.
 
+The syntax takes the following format:  
+value = true-expr if condition else false-expr
+
 ```python
 def conditional_statement(value: bool) -> bool:
     return True if value == True else False
@@ -103,6 +106,9 @@ The same code can be simplified with list comprehensions.
 
 A [Generator expression](https://docs.python.org/3/reference/expressions.html?highlight=generator#generator-expressions) yeilds a new generator object.  
 Generator objects are used to lazily iterate a sequence by levaraging the power of iteration.
+
+-
+
 
 -
 -
